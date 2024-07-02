@@ -40,6 +40,12 @@
     margin-bottom: 5px;
 }
 
+.interest-label .interest-check{
+    color:white;
+    background-color: red;
+    border-color:red;
+}
+
 .interest-check+.interest-label{
     background-color: #ECECEC;
     border-color: #ECECEC;
@@ -56,11 +62,11 @@
     background-color: red;
     border-color:red;
 }
-
+/* 
 select{
-    /* input box와 크기를 맞춤 */
+     input box와 크기를 맞춤 
     box-sizing: content-box;
-}
+} */
 
 #notification-icon{
     background-color: white;
@@ -70,9 +76,9 @@ select{
     background-color: gainsboro;
 }
 
-#intro{
+/* #intro{
     height: 100px;
-}
+} */
 
 .header {
     grid-area: header;
@@ -91,6 +97,19 @@ select{
     
 }
 
+.header-item{
+    display: flex;
+    margin: 5px;
+    margin-left:10px;
+    margin-right:10px;
+    justify-content: center;
+}
+
+
+.header a:hover{
+    color:red;
+}
+
 .bar {
     /* display: flex; */
     grid-area: bar;
@@ -105,22 +124,45 @@ select{
     align-items: center;
 }
 
+
+.profile input{
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    width: 70%;
+    margin:5px;
+}
+
+
+.profile select{
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    width: 70%;
+    margin:5px;
+    box-sizing: content-box;
+}
+
+.profile textarea{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    width: 70%;
+    margin:5px;
+}
+
+
 .footer {
     grid-area: footer;
     text-align: center;
 }
 
-.header-item{
-    display: flex;
-    margin: 5px;
-    margin-left:10px;
-    margin-right:10px;
-    justify-content: center;
-}
 
-.header-item:hover{
-    color:red;
-}
 
 
 /* select{
@@ -133,10 +175,25 @@ select{
     border-bottom: solid #ECECEC 3px;
 }
 
-.bar-link{
+/* .bar-list a{
     text-decoration: none;
     color:black;
+} */
+
+.my-page-list{
+    float: right; 
+    border: solid 2px; 
+    border-radius: 10px;
+    padding:15px;
 }
+.my-page-list a {
+    text-decoration: none;
+}
+
+.my-page-list a:hover {
+    color : red;
+    text-decoration: none;
+  }
 
 .active-page {
     color: black;
@@ -146,7 +203,8 @@ select{
     color: #8e8c8c;
 }
 
-.form-input {
+
+/* .form-input {
     height: 30px;
     border-style: solid;
     border-radius: 5px;
@@ -154,7 +212,7 @@ select{
     border-width: 2px;
     width: 70%;
     margin:5px;
-}
+} */
 
 
 .form-item {

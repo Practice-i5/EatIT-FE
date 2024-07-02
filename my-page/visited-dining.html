@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>모임 목록</title>
+        <link rel="stylesheet" href="style-mypage.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-bar">
+                    <img class="header-item" src="logo.png" style="width:100px; height:100px;">
+                    <a class="header-item">홈</a>
+                    <a class="header-item">모임 등록</a>
+                    <a class="header-item">모임 찾기</a>
+                    <a class="header-item">후기</a>
+                    <div class="header-item">
+                        <button id="notification-icon"><img src="notification.png"></button>
+                        <button class="btn-choice-mid btn-wb">마이페이지</button>
+                        <button class="btn-choice-mid btn-wb">로그아웃</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="my-page-list" style="float: right; border: solid 2px; border-radius: 10px; padding:15px">
+                    <h2>마이 페이지</h2>
+                    <ul style="float:left; padding-left: 0px;">
+                        <li class="unactive-page bar-list">
+                            프로필 수정
+                        </li>
+                        <li class="unactive-page bar-list">
+                            관심사 설정
+                        </li>
+                        <li class="active-page bar-list">
+                            참여한 모임 보기
+                        </li>
+                        <li class="unactive-page bar-list">
+                            차단 내역 관리
+                        </li>
+                        <li class="unactive-page bar-list">
+                            비밀번호 변경
+                        </li>
+                        <li class="unactive-page bar-list">
+                            회원 탈퇴
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="profile">
+                <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
+                    <h2>참여한 모임 관리</h2>
+                    <p class="form-message">날짜 순으로 최근 5개가 표시됩니다.</p>
+                    <div class="form-item">
+                        <div class="block-info">
+                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" style="width:75px; height:75px; border:solid;" class="image-box" />
+                            <div class="block-info-text">
+                                판교 모각코
+                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
+                                    <li>모임장: 알 나스르</li>
+                                    <li>날짜 : 6/22 14:00</li>
+                                    <li>경기도 성남시 대왕판교로 어쩌구</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="block-modify">
+                            <button>상세보기</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="block-info">
+                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" style="width:75px; height:75px; border:solid;" class="image-box" />
+                            <div class="block-info-text">
+                                AI 스터디
+                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
+                                    <li>모임장: 카네라</li>
+                                    <li>날짜 : 7/11 21:00</li>
+                                    <li>메타버스 아카데미</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="block-modify">
+                            <button>상세보기</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="block-info">
+                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" style="width:75px; height:75px; border:solid;" class="image-box" />
+                            <div class="block-info-text">
+                                부거집 모임
+                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
+                                    <li>모임장: 킹</li>
+                                    <li>날짜 : 7/14 21:00</li>
+                                    <li>xx 수제버거</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="block-modify">
+                            <button>상세보기</button>
+                        </div>
+                    </div>
+                    <button type="button">더보기</button>
+                </form>
+                
+            </div>
+            <div class="footer">
+                <h1>대충 푸터</h1>
+            </div>
+        </div>
+    </body>
+</html>

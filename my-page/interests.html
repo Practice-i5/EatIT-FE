@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>관심사 설정</title>
+        <!-- <title>관심사 설정</title> -->
+        <title>기술 프로필 설정</title>
         <link rel="stylesheet" href="style-mypage.css">
+        <script src="interests.js"></script>
     </head>
     <body>
         <div class="container">
@@ -49,16 +51,70 @@
 
             <div class="profile">
                 <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
-                    <h2>관심사 설정</h2>
+                    <h2>기술 프로필 설정</h2>
                     <div class="form-item" id="nickname-form">
                         <label>관심 개발 분야</label>
                         <div style="width: 70%;">
-                            <ul style="margin-left:5px; list-style: none; padding-left: 0px; display:flex; flex-flow : row wrap;">
-                                <li><input id="intereset-1" class="interest-check" type="checkbox" value="frontend"><label class="btn-choice-mid interest-label" for="intereset-1">프론트엔드</label></li>
-                                <li><input id="intereset-2" class="interest-check" type="checkbox" value="backend"><label class="btn-choice-mid interest-label" for="intereset-2">백엔드</label></li>
-                                <li><input id="intereset-3" class="interest-check" type="checkbox" value="project-managment"><label class="btn-choice-mid interest-label" for="intereset-3">기획</label></li>
-                                <li><input id="intereset-4" class="interest-check" type="checkbox" value="game-client"><label class="btn-choice-mid interest-label" for="intereset-4">게임 클라이언트</label></li>
+                            <ul style="margin-left:5px; list-style: none; padding-left: 0px; display:flex; flex-flow : row wrap; align-items: center;">
+                                <li style="margin-top:5px; margin-bottom: 10px;">
+                                        <input id="intereset-1" class="interest-check" type="checkbox" value="frontend">
+                                        <label class="btn-choice-mid interest-label"for="intereset-1">프론트엔드</label>
+                                </li>
+                                <li style="margin-top:5px; margin-bottom: 10px;">
+                                    <div>
+                                        <input id="intereset-2" class="interest-check" type="checkbox" value="backend">
+                                        <label class="btn-choice-mid interest-label" for="intereset-2">백엔드</label>
+                                    </div>
+                                </li>
+                                <li style="margin-top:5px; margin-bottom: 10px;">
+                                    <div>
+                                        <input id="intereset-3" class="interest-check" type="checkbox" value="project-managment">
+                                        <label class="btn-choice-mid interest-label" for="intereset-3">기획</label>
+                                    </div>
+                                </li>
+                                <li style="margin-top:5px; margin-bottom: 10px;">
+                                    <div>
+                                        <input id="intereset-4" class="interest-check" type="checkbox" value="game-client">
+                                        <label class="btn-choice-mid interest-label" for="intereset-4">게임 클라이언트</label>    
+                                    </div>
+                                </li>
+                                <li class="btn-choice-small btn-gray">
+                                    <input id="tech-stack-1" type="checkbox"  style="display: none;" class="chip-button">
+                                    <label for ="tech-stack-1">다른거</label>
+                                </li>
+                                <li class="btn-choice-small btn-gray">
+                                    <input id="tech-stack-2" type="checkbox" style="display: none;" class="chip-button">
+                                    <label for="tech-stack-2">다른거</label>
+                                </li>
+                                <li class="btn-choice-small btn-gray">
+                                    <input id="tech-stack-3" type="checkbox" style="display: none;" class="chip-button">
+                                    <label for = "tech-stack-3">다른거</label>
+                                </li>
+                                <li class="btn-choice-small btn-gray">
+                                    <input id="tech-stack-4" type="checkbox"  class="chip-button">
+                                    <label for = "tech-stack-4">다른거</label>
+                                </li>
 
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-item" id="nickname-form">
+                        <label>개발 경력 설정</label>
+                        <div style="width: 65%;">
+                            <ul style="margin-left:5px; list-style: none; padding-left: 0px; display:flex; flex-flow : column wrap; align-items: baseline;">
+                                <li style="display: flex; justify-content: space-between; width: 100%;">
+                                    <div>회사1</div>
+                                    <div>2020.02~2021.02</div>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; width: 100%;">
+                                    <p>회사2</p>
+                                    <p>2021.02~2023.10</p>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; width: 100%;">
+                                    <div>회사3</div>
+                                    <div>2023.10~현재</div>
+                                </li>
                             </ul>
                         </div>
                     </div>

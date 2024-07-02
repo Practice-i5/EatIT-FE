@@ -28,6 +28,16 @@ function uploadImageReset(preview){
     });
 }
 
+
+function chipButton(){
+    const chipButtons=document.querySelectorAll('.chip-button');
+    console.log(chipButtons)
+    for (chipBtn in chipButtons){
+        console.log(chipBtn)
+    }
+}
+
 window.onload = function(){
     uploadImageManage();
+    chipButton();
 };

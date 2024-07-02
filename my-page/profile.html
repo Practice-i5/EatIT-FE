@@ -8,15 +8,17 @@
     <body>
         <div class="container">
             <div class="header">
-                <img class="header-item" src="logo.png" style="width:100px; height:100px;">
-                <a class="header-item">홈</a>
-                <a class="header-item">모임 등록</a>
-                <a class="header-item">모임 찾기</a>
-                <a class="header-item">후기</a>
-                <div class="header-item">
-                    <button id="notification-icon"><img src="notification.png"></button>
-                    <button class="btn-choice-mid btn-wb">마이페이지</button>
-                    <button class="btn-choice-mid btn-wb">로그아웃</button>
+                <div class="header-bar">
+                    <img class="header-item" src="logo.png" style="width:100px; height:100px;">
+                    <a class="header-item">홈</a>
+                    <a class="header-item">모임 등록</a>
+                    <a class="header-item">모임 찾기</a>
+                    <a class="header-item">후기</a>
+                    <div class="header-item">
+                        <button id="notification-icon"><img src="notification.png"></button>
+                        <button class="btn-choice-mid btn-wb">마이페이지</button>
+                        <button class="btn-choice-mid btn-wb">로그아웃</button>
+                    </div>
                 </div>
             </div>
 
@@ -24,23 +26,23 @@
                 <div class="my-page-list" style="float: right; border: solid 2px; border-radius: 10px; padding:15px">
                     <h2>마이 페이지</h2>
                     <ul style="float:left; padding-left: 0px;">
-                        <li class="active-page bar-list">
-                            프로필 수정
+                        <li class="bar-list">
+                            <a class="active-page" href="./profile.html">프로필 수정</a>
                         </li>
-                        <li class="unactive-page bar-list">
-                            관심사 설정
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./interests.html">관심사 설정</a>
                         </li>
-                        <li class="unactive-page bar-list">
-                            참여한 모임 관리
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./profile.html">참여한 모임 보기</a>
                         </li>
-                        <li class="unactive-page bar-list">
-                            차단 내역 관리
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./black-list.html">차단 내역 관리</a>
                         </li>
-                        <li class="unactive-page bar-list">
-                            비밀번호 변경
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./modify-password.html">비밀번호 변경</a>
                         </li>
-                        <li class="unactive-page bar-list">
-                            회원 탈퇴
+                        <li class="bar-list">
+                            <a class="unactive-page" >회원 탈퇴</a>
                         </li>
                     </ul>
                 </div>
@@ -52,21 +54,21 @@
                             <label class="profile-label">프로필 사진</label>
                             <!-- <image src="파르토.webp" style="width:100px; height:100px; border:solid;"></image> -->
                             <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" style="width:80px; height:80px; border:solid;" class="image-box" />
-                            <label for="img-file" class="upload-btn">
+                            <label for="img-file" class="upload-btn btn-choice-small btn-wb padding:0px" >
                               <input id="img-file" style="display: none;" type="file" accept="image/*"/>
-                              <span>Upload Image</span>
+                              <span>수정</span>
                             </label>
-                            <button class="reset-img">초기화</button>
+                            <label class="reset-img btn-choice-small btn-wb">초기화</ㅣ>
                         </div>
                         <div class="form-item">
                             <label class="profile-label" for="get-nickname">닉네임</label>
-                            <input class="form-input" id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
+                            <input id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
                         </div>
                         <p class="form-message warn">주의사항이나 에러 메세지 나올거임</p>
 
                         <div class="form-item">
                             <label class="profile-label">성별</label>
-                            <select class="form-input">
+                            <select>
                                 <option value="">성별</option>
                                 <option value="male">남성</option>
                                 <option value="female">여성</option>
