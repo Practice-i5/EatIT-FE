@@ -47,7 +47,6 @@ body{
 
 
 .container {
-    /* height: 100%; */
     min-height: 100vh;
     display: grid;
     grid-template-areas:
@@ -61,51 +60,7 @@ body{
     /* grid-template-columns: 1fr 2fr 3fr  2fr 1fr; */
 }
 
-.interest-check{
-    display: none;
-}
 
-/* .interest-label{
-    border-style: solid;
-    border-radius: 20px;
-    height:30px;
-    margin: 3px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-} */
-
-
-
-.interest-label{
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.interest-label .interest-check{
-    color:white;
-    background-color: red;
-    border-color:red;
-}
-
-.interest-check+.interest-label{
-    background-color: #ECECEC;
-    border-color: #ECECEC;
-    color: #707070;
-}
-
-/* .interest-check+.interest-label:hover{
-    color:blue;
-    background-color: red;
-} */
-
-.interest-check:checked~.interest-label{
-    color:white;
-    background-color: red;
-    border-color:red;
-}
 /* 
 select{
      input box와 크기를 맞춤 
@@ -175,7 +130,7 @@ select{
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
-    width: 70%;
+    flex-grow: 1;
     margin:5px;
 }
 
@@ -186,7 +141,7 @@ select{
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
-    width: 70%;
+    flex-grow: 1;
     margin:5px;
     box-sizing: content-box;
 }
@@ -196,8 +151,9 @@ select{
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
-    width: 70%;
+    flex-grow: 1;
     margin:5px;
+    resize: none;
 }
 
 
@@ -226,7 +182,7 @@ select{
     list-style-type: none;
     font-size: 20px;
     margin-bottom: 30px;
-    border-bottom: solid #ECECEC 3px;
+    border-bottom: solid #ECECEC 2px;
 }
 
 /* .bar-list a{
@@ -268,6 +224,15 @@ select{
     margin:5px;
 } */
 
+.form-content {
+    display: inline-block;
+    width: 80%;
+    border:solid 2px;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+}
+
 
 .form-item {
     display: flex;
@@ -279,19 +244,48 @@ select{
 }
 
 
-.btn-submit {
-    width: 250px;
-    height: 32px;
-    border-radius: 25px;
-    border-style: none;
-    outline: solid;
-}
-
 .profile-label {
+    display: inline-block;
     text-align: left;
     width: 30%;
 }
 
+
+/* interest : 관심사 설정쪽 */
+
+.interest-check{
+    display: none;
+}
+
+
+.interest-label{
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.interest-label .interest-check{
+    color:white;
+    background-color: red;
+    border-color:red;
+}
+
+.interest-check+.interest-label{
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    color: #707070;
+}
+
+/* .interest-check+.interest-label:hover{
+    color:blue;
+    background-color: red;
+} */
+
+.interest-check:checked~.interest-label{
+    color:white;
+    background-color: red;
+    border-color:red;
+}
 
 .form-message {
     font-size: 12px;
@@ -316,89 +310,19 @@ select{
     align-items:end;
 }
 
-.warn {
-    color: #8c8c8c;
-    font-size: 12px;
+.sidebar-block{
+    float: right;
+    border: solid 2px;
+    border-radius: 10px;
+    padding:15px;
 }
 
-.error {
-    color: red;
-    font-size: 12px;
+.chip-btn-list{
+    max-width: 70%;
+    margin-left:5px; display:flex; flex-flow : wrap; align-items: center;
 }
 
-.valid {
-    color: blue;
-    font-size: 12px;
+.image-box{
+    border:solid;
+    border-width: 2px;
 }
-
-.btn-rw {
-    background-color: red;
-    color: white;
-    border-color: red;
-}
-
-.btn-rw:hover {
-    background-color: brown;
-    /* color: white; */
-    border-color: brown;
-}
-
-.btn-wr {
-    background-color: white;
-    border-color: red;
-    color: red;
-}
-
-.btn-wr:hover {
-    background-color: #ECECEC;
-    /* border-color : #D0D0D0; */
-}
-
-.btn-gray {
-    background-color: #ECECEC;
-    border-color: #ECECEC;
-    color: #707070;
-
-}
-
-.btn-gray:hover {
-    background-color: #B0B0B0;
-    border-color: #B0B0B0;
-    color: #FFFFFF;
-}
-
-.btn-wb{
-    background-color: white;
-    color: black;
-}
-
-.btn-wb:hover{
-    background-color: gainsboro;
-}
-
-.btn-choice-small {
-    border-style: solid;
-    border-radius: 20px;
-    margin: 3px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    /* border-style: none; */
-}
-
-.btn-choice-mid {
-    border-style: solid;
-    border-radius: 20px;
-    height:30px;
-    margin: 3px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
-
-    /* border-style: none; */
-}
-

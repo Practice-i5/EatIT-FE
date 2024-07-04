@@ -4,13 +4,14 @@
 <head>
     <title>로그인 정보 수정</title>
     <link rel="stylesheet" href="style-mypage.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <div class="header-bar">
-                <img class="header-item" src="logo.png" style="width:100px; height:100px;">
+                <img class="header-item" src="images/logo.png" style="width:100px; height:100px;">
                 <a class="header-item">홈</a>
                 <a class="header-item">모임 등록</a>
                 <a class="header-item">모임 찾기</a>
@@ -22,35 +23,35 @@
                 </div>
             </div>
         </div>
-        <div class="bar">
-            <div class="my-page-list" style="float: right; border: solid 2px; border-radius: 10px; padding:15px">
+
+        <aside class="bar">
+            <div class="my-page-list sidebar-block">
                 <h2>마이 페이지</h2>
-                <ul style="float:left; padding-left: 0px;">
+                <ul class="list-no-pad">
                     <li class="bar-list">
                         <a class="unactive-page" href="./profile.html">프로필 수정</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./interests.html">기술 프로필 설정</a>
+                        <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./visited-dining.html">참여한 모임 보기</a>
+                        <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./black-list.html">차단 내역 관리</a>
+                        <a class="unactive-page" href="./black-list.html">차단 회원 관리</a>
                     </li>
                     <li class="bar-list">
-                        <a class="active-page" href="./modify-password.html">비밀번호 변경</a>
+                        <a class="active-page" href="./account-info.html">계정 정보 보기</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./withdraw.html" >회원 탈퇴</a>
+                        <a class="unactive-page" href="./withdraw.html">회원 탈퇴</a>
                     </li>
                 </ul>
             </div>
-        </div>
-
+        </aside>
 
         <div class="profile">
-            <form style="width:80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
+            <form class="form-content">
                 <h2>로그인 정보 보기</h2>
                 <div class="form-item">
                     <label class="profile-label">이름</label>
@@ -60,8 +61,11 @@
 
                 <div class="form-item">
                     <label class="profile-label">휴대폰 번호</label>
-                    <input class="form-input" type="password" placeholder="휴대폰 번호">
-                    <button>변경 인증하기</button>
+                    <div style="display: flex; flex-grow:1">
+                        <input class="form-input" type="text" placeholder="휴대폰 번호">
+                        <button >변경하기</button>
+                    </div>
+                    
                 </div>
                 <p class="form-message warn">주의사항</p>
                 <p class="form-message error">에러 메세지</p>
@@ -94,19 +98,19 @@
                 <p class="form-message warn">주의사항</p>
                 <p class="form-message error">에러 메세지</p>
 
-
-                <p class="form-message warn">주의사항</p>
-                <p class="form-message error">에러 메세지</p>
-
-
-
                 <button class="btn-rw btn-submit" type="submit">제출</button>
             </form>
         </div>
-        <div class="footer">
-            <h1>대충 푸터</h1>
-        </div>
+        <footer class="footer">
+            <div class="footer-link-block">
+                <a>고객서비스</a>
+                <a>소셜미디어</a>
+
+                <a>팀원소개</a>
+                <a>github</a>
+            </div>
+            <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+        </footer>
     </div>
 </body>
-
-</html>ㅋㅋㅋ
+</html>

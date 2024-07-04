@@ -3,13 +3,14 @@
     <head>
         <title>프로필 수정</title>
         <link rel="stylesheet" href="style-mypage.css">
+        <link rel="stylesheet" href="components.css">
         <script src="js-mypage.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="header">
                 <div class="header-bar">
-                    <img class="header-item" src="logo.png" style="width:100px; height:100px;">
+                    <img class="header-item" src="images/logo.png" style="width:100px; height:100px;">
                     <a class="header-item">홈</a>
                     <a class="header-item">모임 등록</a>
                     <a class="header-item">모임 찾기</a>
@@ -22,81 +23,88 @@
                 </div>
             </div>
 
-            <div class="bar">
-                <div class="my-page-list" style="float: right; border: solid 2px; border-radius: 10px; padding:15px">
+            <aside class="bar">
+                <div class="my-page-list sidebar-block">
                     <h2>마이 페이지</h2>
-                    <ul style="float:left; padding-left: 0px;">
+                    <ul class="list-no-pad">
                         <li class="bar-list">
                             <a class="active-page" href="./profile.html">프로필 수정</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" href="./interests.html">관심사 설정</a>
+                            <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" href="./profile.html">참여한 모임 보기</a>
+                            <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" href="./black-list.html">차단 내역 관리</a>
+                            <a class="unactive-page" href="./black-list.html">차단 회원 관리</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" href="./modify-password.html">비밀번호 변경</a>
+                            <a class="unactive-page" href="./account-info.html">계정 정보 보기</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" >회원 탈퇴</a>
+                            <a class="unactive-page" href="./withdraw.html">회원 탈퇴</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-                <div class="profile">
-                    <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
-                        <h2>프로필 수정</h2>
-                        <div class="form-item">
-                            <label class="profile-label">프로필 사진</label>
-                            <!-- <image src="파르토.webp" style="width:100px; height:100px; border:solid;"></image> -->
+            </aside>
+
+            <div class="profile">
+                <form class="form-content">
+                    <h2>프로필 수정</h2>
+                    <div class="form-item">
+                        <label class="profile-label">프로필 사진</label>
+                        <div class="form-input" style="width: 70%; display: flex; align-items: center; justify-content: space-between;">
                             <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" style="width:80px; height:80px; border:solid;" class="image-box" />
-                            <label for="img-file" class="upload-btn btn-choice-small btn-wb padding:0px" >
-                              <input id="img-file" style="display: none;" type="file" accept="image/*"/>
-                              <span>수정</span>
-                            </label>
-                            <label class="reset-img btn-choice-small btn-wb">초기화</ㅣ>
-                        </div>
-                        <div class="form-item">
-                            <label class="profile-label" for="get-nickname">닉네임</label>
-                            <input id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
-                        </div>
-                        <p class="form-message warn">주의사항이나 에러 메세지 나올거임</p>
+                        
+                            <div>
+                                <input id="img-file" style="display: none; width:0px; margin: 0px; padding: 0px;" type="file" accept="image/*"/>
+                                <label for="img-file" class="upload-btn btn-choice-small btn-wb">수정</label>
+                                <label class="reset-img btn-choice-small btn-wb">초기화</label>
+                            </div>
 
-                        <div class="form-item">
-                            <label class="profile-label">성별</label>
-                            <select>
-                                <option value="">성별</option>
-                                <option value="male">남성</option>
-                                <option value="female">여성</option>
-                            </select>
                         </div>
-                        <div class="form-item">
-                            <label class="profile-label" for="age">나이</label>
-                            <input class="form-input" id="age" type="number" placeholder="나이를 입력하세요.">
-                        </div>
-
-                        <div class="form-item">
-                            <label class="profile-label" for="intro">소개글</label>
-                            <textarea class="form-input" id="intro" placeholder="소개글을 입력하세요." rows="5" cols="45" style="resize: none;"></textarea>
-                        </div>
-                        <p class="form-message error">에러 메시지</p>
-                        <button class="btn-rw btn-submit" type="submit">제출</button>
-                    </form>
-                </div>
-                <div class="footer">
-                    <div class="footer-link-block">
-                        <a>고객서비스</a>
-                        <a>소셜미디어</a>
-    
-                        <a>팀원소개</a>
-                        <a>github</a>
+                        
                     </div>
-                    <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+                    <div class="form-item">
+                        <label class="profile-label" for="get-nickname">닉네임</label>
+                        <input id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
+                    </div>
+                    <p class="form-message warn">주의사항이나 에러 메세지 나올거임</p>
+
+                    <div class="form-item">
+                        <label class="profile-label">성별</label>
+                        <select>
+                            <option value="">성별</option>
+                            <option value="male">남성</option>
+                            <option value="female">여성</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label class="profile-label" for="age">나이</label>
+                        <input class="form-input" id="age" type="number" placeholder="나이를 입력하세요.">
+                    </div>
+
+                    <div class="form-item">
+                        <label class="profile-label" for="intro">소개글</label>
+                        <textarea class="form-input" id="intro" placeholder="소개글을 입력하세요." rows="5"></textarea>
+                    </div>
+                    <p class="form-message error">에러 메시지</p>
+                    <button class="btn-rw btn-submit" type="submit">제출</button>
+                </form>
+            </div>
+                
+            <footer class="footer">
+                <div class="footer-link-block">
+                    <a>고객서비스</a>
+                    <a>소셜미디어</a>
+
+                    <a>팀원소개</a>
+                    <a>github</a>
                 </div>
+                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+            </footer>
+
         </div>
     </body>
 </html>
