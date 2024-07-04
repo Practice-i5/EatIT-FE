@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>비밀번호 수정</title>
+    <title>회원탈퇴</title>
     <link rel="stylesheet" href="style-mypage.css">
 </head>
 
@@ -39,39 +39,27 @@
                         <a class="unactive-page" href="./black-list.html">차단 내역 관리</a>
                     </li>
                     <li class="bar-list">
-                        <a class="active-page" href="./modify-password.html">비밀번호 변경</a>
+                        <a class="unactive-page" href="./modify-password.html">비밀번호 변경</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./withdraw.html" >회원 탈퇴</a>
+                        <a class="active-page" href="./withdraw.html" >회원 탈퇴</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-
         <div class="profile">
             <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
-                <h2>비밀번호 수정</h2>
-                <div class="form-item">
-                    <label class="profile-label" for="get-nickname">기존 비밀번호</label>
-                    <input class="form-input get-nickname" type="password" placeholder="기존 비밀번호 입력">
-                </div>
-                <p class="form-message warn">주의사항</p>
-                <p class="form-message error">에러 메세지</p>
-                <div class="form-item">
-                    <label class="profile-label">새 비밀번호</label>
-                    <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
-                </div>
-                <p class="form-message warn">주의사항</p>
-                <p class="form-message error">에러 메세지</p>
-                <div class="form-item">
-                    <label class="profile-label">새 비밀번호</label>
-                    <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
-                </div>
-                <p class="form-message warn">주의사항</p>
-                <p class="form-message error">에러 메세지</p>
-
-                <button class="btn-rw btn-submit" type="submit">제출</button>
+                <h2>회원탈퇴</h2>
+                <h3>정말로 회원은 탈퇴하겠습니까?</h3>
+                <p>탈퇴시 해당 이메일로 재가입이 제한됩니다.</p>
+                <button class="btn-rw btn-submit" type="submit">탈퇴하기</button>
+            </form>
+            <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
+                <h2>회원탈퇴 완료</h2>
+                <h3>회원 탈퇴가  완료되었습니다.</h3>
+                
+                <button class="btn-rw btn-submit" type="submit">홈으로</button>
             </form>
         </div>
         <div class="footer">

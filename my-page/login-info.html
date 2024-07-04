@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>비밀번호 수정</title>
+    <title>로그인 정보 수정</title>
     <link rel="stylesheet" href="style-mypage.css">
 </head>
 
@@ -50,26 +50,55 @@
 
 
         <div class="profile">
-            <form style="width: 80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
-                <h2>비밀번호 수정</h2>
+            <form style="width:80%; border:solid 2px; border-radius: 10px; padding:10px; text-align: center;">
+                <h2>로그인 정보 보기</h2>
+                <div class="form-item">
+                    <label class="profile-label">이름</label>
+                    <input class="form-input" type="text" placeholder="이름">
+                </div>
+                <p class="form-message warn">휴대폰 인증시 변경가능합니다</p>
+
+                <div class="form-item">
+                    <label class="profile-label">휴대폰 번호</label>
+                    <input class="form-input" type="password" placeholder="휴대폰 번호">
+                    <button>변경 인증하기</button>
+                </div>
+                <p class="form-message warn">주의사항</p>
+                <p class="form-message error">에러 메세지</p>
+
+                <div class="form-item">
+                    <label class="profile-label">이메일</label>
+                    <input class="form-input" disabled placeholder="현재 아이디">
+                </div>
+
+                <div class="form-item">
+                    <label class="profile-label">소셜로그인 정보</label>
+                    네이버 계정임
+                </div>
+
+
                 <div class="form-item">
                     <label class="profile-label" for="get-nickname">기존 비밀번호</label>
                     <input class="form-input get-nickname" type="password" placeholder="기존 비밀번호 입력">
                 </div>
-                <p class="form-message warn">주의사항</p>
+                <p class="form-message warn">자체 회원 가입 유저만 변경 가능합니다.</p>
                 <p class="form-message error">에러 메세지</p>
+                <div class="form-item">
+                    <label class="profile-label">새 비밀번호</label>
+                    <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
+                </div>
                 <div class="form-item">
                     <label class="profile-label">새 비밀번호</label>
                     <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
                 </div>
                 <p class="form-message warn">주의사항</p>
                 <p class="form-message error">에러 메세지</p>
-                <div class="form-item">
-                    <label class="profile-label">새 비밀번호</label>
-                    <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
-                </div>
+
+
                 <p class="form-message warn">주의사항</p>
                 <p class="form-message error">에러 메세지</p>
+
+
 
                 <button class="btn-rw btn-submit" type="submit">제출</button>
             </form>
@@ -80,4 +109,4 @@
     </div>
 </body>
 
-</html>
+</html>ㅋㅋㅋ
