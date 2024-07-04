@@ -27,7 +27,22 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .main-image {
+      max-height: none;
+      /* 메인 이미지에는 최대 높이를 제한하지 않음 */
+    }
 
+    .other-image {
+      max-height: 140px;
+      /* 다른 이미지의 최대 높이를 140px로 제한 */
+    }
+
+    .carousel-inner img {
+      vertical-align: middle;
+      /* 모든 이미지에 대해 중간 정렬 */
+    }
+  </style>
 
 </head>
 
@@ -44,15 +59,12 @@
   </div>
   <!-- Spinner End -->
 
- <!-- Navbar start  수정한 부분-- 헤더 부분!-->
-<div class="container-fluid fixed-top">
-  <div class="container px-0">
-    <nav class="navbar navbar-light bg-white navbar-expand-xl">
-      <a href="home.html" class="navbar-brand">
-          <img src="/meetingList-page/img/image_145.png" width ="100" alt="Eat-IT Logo">
-          <h1 class="text-primary display-6">Eat-IT</h1>
-        
-      </a>
+  <!-- Navbar start  수정한 부분-- 헤더 부분!-->
+  <div class="container-fluid fixed-top">
+    <div class="container px-0">
+      <nav class="navbar navbar-light bg-white navbar-expand-xl">
+        <img src="/meetingList-page/img/image_145.png" width="80" alt="Eat-IT Logo">
+        <h1 class="text-primary display-6">Eat-IT</h1>
         <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse">
           <span class="fa fa-bars text-primary"></span>
@@ -121,11 +133,14 @@
   <!-- Modal Search End -->
 
   <!-- Hero Start -->
-  <div>
-    <h1>약간 빈공간 추가</h1>
-  </div>
-  <!-- Hero End -->
 
+  <div>
+    <h1>
+      빈공간
+    </h1>
+  </div>
+
+  <!-- Hero End -->
   <!-- 관심 개발 분야 목록-->
   <div class="container-fluid fruite py-5">
     <div class="container py-5">
@@ -138,6 +153,12 @@
             <ul class="nav nav-pills d-inline-flex text-center mb-5">
 
               <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="like-page.html">
+                  <span class="text-dark" style="width: 130px">찜한 모임</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
                 <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
                   href="before-meetingList-page.html">
                   <span class="text-dark" style="width: 130px">참여 전 모임</span>
@@ -148,7 +169,7 @@
                 <a class="d-flex py-2 m-2 bg-light rounded-pill active" data-bs-toggle="pill"
                   href="in-a-meetingList-page.html">
                   <span class="text-dark" style="width: 130px">참여중인 모임</span>
-                </a>
+                </a> 
               </li>
 
               <li class="nav-item">
@@ -162,6 +183,10 @@
           </div>
         </div>
 
+
+
+
+
         <!-- 관심 개발 분야 음식점 목록 나오는 곳-->
         <div class="tab-content">
           <div id="tab-1" class="tab-pane fade show p-0 active">
@@ -169,127 +194,160 @@
               <div class="col-lg-12">
                 <div class="row g-4">
                   <!-- 이 부분이 관심 개발 분야 네모 상자인데, 클래스 이름 변경 해야 함!-->
+
                   <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="rounded position-relative fruite-item">
                       <div class="fruite-img">
-                        <img src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_640.jpg"
-                          class="img-fluid w-100 rounded-top" alt="" />
+                        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
                       </div>
                       <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
                         style="top: 10px; left: 10px">
                         프론트엔드
                       </div>
                       <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                        <h4>후라토식당 아브뉴프랑 판교점</h4>
+                        <h4>브런치카페</h4>
                         <p>
-                          식당 소개, 대화 주제<br>
-                          [메아미 개발자 모임]<br>
-                          ⭐️⭐️⭐️⭐️⭐️
+                          맛있는 브런치먹고 힘내봅시다
+                          <br>
+                          [시니어 프론트 개발자 모임]
                         </p>
-                        <!-- 프로필 추가하는 부분-->
-                        <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
-                            alt="Profile Picture" class="profile-image">
-                          <span class="profile-text">1/2</span>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.07.01(월) 오후 12:00
+                          </p>
+                          <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                              class="fa fa-shopping-bag me-2 text-primary"></i>
+                            Add to cart</a>
                         </div>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">1:1 채팅</a>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">신고하기</a>
                       </div>
                     </div>
                   </div>
+
+
                   <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="rounded position-relative fruite-item">
                       <div class="fruite-img">
-                        <img src="https://cdn.pixabay.com/photo/2023/07/26/16/43/food-8151625_640.jpg"
-                          class="img-fluid w-100 rounded-top" alt="" />
+                        <img src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
                       </div>
                       <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
                         style="top: 10px; left: 10px">
                         프론트엔드
                       </div>
                       <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                        <h4>후라토식당 아브뉴프랑 판교점</h4>
+                        <h4>통닭식당</h4>
                         <p>
-                          식당 소개, 대화 주제<br>
-                          [메아미 개발자 모임]<br>
-                          ⭐️⭐️⭐️⭐️⭐️
+                          통닭먹고 파이팅
+                          <br>
+                          [신입 프론트 개발자 모임]
                         </p>
-                        <!-- 프로필 추가하는 부분-->
-                        <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
-                            alt="Profile Picture" class="profile-image">
-                          <span class="profile-text">1/2</span>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 5:00
+                          </p>
+                          <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                              class="fa fa-shopping-bag me-2 text-primary"></i>
+                            Add to cart</a>
                         </div>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">1:1 채팅</a>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">신고하기</a>
                       </div>
                     </div>
                   </div>
+
+
                   <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="rounded position-relative fruite-item">
                       <div class="fruite-img">
-                        <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_640.jpg"
-                          class="img-fluid w-100 rounded-top" alt="" />
+                        <img src="https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
                       </div>
                       <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
                         style="top: 10px; left: 10px">
                         프론트엔드
                       </div>
                       <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                        <h4>후라토식당 아브뉴프랑 판교점</h4>
+                        <h4>프랑스식당</h4>
                         <p>
-                          식당 소개, 대화 주제<br>
-                          [메아미 개발자 모임]<br>
-                          ⭐️⭐️⭐️⭐️⭐️
+                          양식 먹고 정보 공유하실분~!
+                          <br> [판교 프론트 개발자 모임]
                         </p>
-                        <!-- 프로필 추가하는 부분-->
-                        <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
-                            alt="Profile Picture" class="profile-image">
-                          <span class="profile-text">1/2</span>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 1:00
+                          </p>
+                          <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                              class="fa fa-shopping-bag me-2 text-primary"></i>
+                            Add to cart</a>
                         </div>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">1:1 채팅</a>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">신고하기</a>
                       </div>
                     </div>
                   </div>
+
                   <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="rounded position-relative fruite-item">
                       <div class="fruite-img">
-                        <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_640.jpg"
-                          class="img-fluid w-100 rounded-top" alt="" />
+                        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
                       </div>
                       <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
                         style="top: 10px; left: 10px">
                         프론트엔드
                       </div>
                       <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                        <h4>후라토식당 아브뉴프랑 판교점</h4>
+                        <h4>브런치카페</h4>
                         <p>
-                          식당 소개, 대화 주제<br>
-                          [메아미 개발자 모임]<br>
-                          ⭐️⭐️⭐️⭐️⭐️
+                          맛있는 브런치먹고 힘내봅시다
+                          <br>
+                          [시니어 프론트 개발자 모임]
                         </p>
-                        <!-- 프로필 추가하는 부분-->
-                        <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
-                            alt="Profile Picture" class="profile-image">
-                          <span class="profile-text">1/2</span>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.07.01(월) 오후 12:00
+                          </p>
+                          <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                              class="fa fa-shopping-bag me-2 text-primary"></i>
+                            Add to cart</a>
                         </div>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">1:1 채팅</a>
-                        <a class="btn btn-outline-dark rounded-pill" href="#">신고하기</a>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- 모임을 더 추가해야 할 경우-->
+
+                  
+                  
+          
           </div>
         </div>
       </div>
     </div>
-  </div>
+ 
+  <!-- JavaScript 파일 연결 -->
+  <script src="main.js"></script>
+  <!-- Fruits Shop End-->
+
   <!-- Footer Start -->
   <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
     <div class="container py-5">
@@ -298,7 +356,10 @@
           <div class="col-lg-3">
             <a href="#">
               <h1 class="text-primary mb-0">Eat IT</h1>
-              <p class="text-secondary mb-0">개발자 오프라인 모임</p>
+              <p class="text-secondary mb-0">먹고 마시며 즐기는 인맥 확장의 기회!<br>
+                소소한 IT 소모임 “Eat IT”
+                <br>🍽️🍝🍦🍕🍣🍳🍛🌭🍰🍛🍚🍮🌮☕️
+              </p>
             </a>
           </div>
         </div>
@@ -326,7 +387,7 @@
           <h4 class="text-light mb-3">팀원 소개</h4>
           <a class="btn-link" href="">팀원 깃허브</a>
           <div class="team-member">
-            <img src="/meetingList-page/img/image_161.png" width = "400"alt="Team Member" class="team-member-img">
+            <img src="/meetingList-page/img/image_161.png" width="400" alt="Team Member" class="team-member-img">
           </div>
         </div>
       </div>
@@ -345,6 +406,27 @@
   </div>
   <!-- Footer End -->
 
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Eat IT</a>, All right
+            reserved.</span>
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Designed By
+          <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+          Distributed By
+          <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
 
 </body>
 
