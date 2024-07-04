@@ -26,20 +26,20 @@
             } else {
                 $('.fixed-top').removeClass('shadow').css('top', 0);
             }
-        } 
+        }
     });
-    
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -52,27 +52,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:1
+            768: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:2
+            1200: {
+                items: 2
             }
         }
     });
@@ -86,27 +86,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             },
-            1200:{
-                items:4
+            1200: {
+                items: 4
             }
         }
     });
@@ -150,38 +150,38 @@
 })(jQuery);
 
 // 프로필 누르는 이벤트 - 메인 관심 개발 분야 목록 페이지
-document.querySelector('.heart').addEventListener('click', function() {
+document.querySelector('.heart').addEventListener('click', function () {
     alert('Liked!');
 });
 
-document.querySelector('.share').addEventListener('click', function() {
+document.querySelector('.share').addEventListener('click', function () {
     alert('Shared!');
 });
 
 //알림 로그인 회원가입 버튼 부분 - 헤더
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // 알림 버튼 이벤트
-    document.querySelector('.btn-notification').addEventListener('click', function() {
+    document.querySelector('.btn-notification').addEventListener('click', function () {
         const notificationDot = this.querySelector('.bg-danger');
         notificationDot.style.display = notificationDot.style.display === 'none' ? 'block' : 'none';
         alert('새 알림이 있습니다.');
     });
 
     // 로그인 버튼 클릭 시 login.html로 이동
-    document.getElementById('loginButton').addEventListener('click', function() {
+    document.getElementById('loginButton').addEventListener('click', function () {
         window.location.href = 'login.html';
     });
 
     // 회원가입 버튼 클릭 시 join.html로 이동
-    document.getElementById('signupButton').addEventListener('click', function() {
+    document.getElementById('signupButton').addEventListener('click', function () {
         window.location.href = 'join.html';
     });
 });
 
 // main.js 파일 내부
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // 전체보기 버튼 클릭 이벤트 처리
-    document.getElementById('showAllButton').addEventListener('click', function() {
+    document.getElementById('showAllButton').addEventListener('click', function () {
         alert('전체보기 버튼을 클릭했습니다!');
     });
 });
