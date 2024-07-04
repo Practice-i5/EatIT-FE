@@ -53,38 +53,34 @@
         <h1 class="text-primary display-6">Eat-IT</h1>
         
       </a>
-      <button
-        class="navbar-toggler py-2 px-3"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="fa fa-bars text-primary"></span>
-      </button>
-      <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-        <div class="navbar-nav mx-auto">
-          <a href="home.html" class="nav-item nav-link active">홈</a>
-          <a href="enroll-meeting.html" class="nav-item nav-link">모임등록</a>
-          <a href="search.html" class="nav-item nav-link">모임찾기</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="home.html" class="nav-item nav-link ">홈</a>
+            <a href="enroll-meeting.html" class="nav-item nav-link">모임등록</a>
+            <a href="search.html" class="nav-item nav-link">모임찾기</a>
+            <a href="before-meetingList-page.html" class="nav-item nav-link active">모임 목록</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
           <!-- 알림, 로그인, 회원가입 버튼 추가 -->
-           
+
           <a href="#" class="btn-notification my-auto me-4">
             <i class="fas fa-bell fa-2x"></i>
-            <span
-              class="position-absolute bg-danger rounded-circle"
+            <span class="position-absolute bg-danger rounded-circle"
               style="top: 0; right: 0; width: 10px; height: 10px;"></span>
           </a>
-           <!-- JavaScript 파일 연결 -->
+          <!-- JavaScript 파일 연결 -->
           <button class="btn btn-danger rounded-pill me-2" id="loginButton">로그인</button>
           <button class="btn btn-outline-danger rounded-pill" id="signupButton">회원가입</button>
         </div>
-      </div>
+    </div>
     </nav>
   </div>
-</div>
-<!-- Navbar End -->
+  </div>
+  <!-- Navbar End -->
 
 
   <!-- 일단 이렇게 해야 페이지 이동될 수 있어서 이 방식으로 했는데, 추후에 js로 분리시켜야 함-->
@@ -142,7 +138,7 @@
             <ul class="nav nav-pills d-inline-flex text-center mb-5">
 
               <li class="nav-item">
-                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
                   href="before-meetingList-page.html">
                   <span class="text-dark" style="width: 130px">참여 전 모임</span>
                 </a>
@@ -156,7 +152,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
+                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
                   href="after-meetingList-page.html">
                   <span class="text-dark" style="width: 130px">완료된 모임</span>
                 </a>
@@ -294,21 +290,18 @@
       </div>
     </div>
   </div>
-  <!--관심 개발 분야 목록 -->
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-  <div class="container py-5">
-    <div
-      class="pb-4 mb-4"
-      style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)"
-    >
-      <div class="row g-4">
-        <div class="col-lg-3">
-          <a href="#">
-            <h1 class="text-primary mb-0">Eat IT</h1>
-            <p class="text-secondary mb-0">개발자 오프라인 모임</p>
-          </a>
-        </div>
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+      <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <a href="#">
+              <h1 class="text-primary mb-0">Eat IT</h1>
+              <p class="text-secondary mb-0">개발자 오프라인 모임</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -317,7 +310,7 @@
         <div class="footer-item">
           <h4 class="text-light mb-3">NOTICE</h4>
           <p class="mb-4">
-           공지사항
+            공지사항
           </p>
         </div>
       </div>
@@ -329,29 +322,30 @@
           <a class="btn-link" href="">인재 채용</a>
         </div>
       </div>
-    <div class="col-lg-3 col-md-6">
-    <div class="d-flex flex-column text-start footer-item">
-        <h4 class="text-light mb-3">팀원 소개</h4>
-        <a class="btn-link" href="">팀원 깃허브</a>
-        <div class="team-member">
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex flex-column text-start footer-item">
+          <h4 class="text-light mb-3">팀원 소개</h4>
+          <a class="btn-link" href="">팀원 깃허브</a>
+          <div class="team-member">
             <img src="/main-page/img/image_team.png" alt="Team Member" class="team-member-img">
+          </div>
         </div>
-    </div>
-</div>
- <div class="col-lg-3 col-md-6">
+      </div>
+      <div class="col-lg-3 col-md-6">
         <div class="d-flex flex-column text-start footer-item">
           <h4 class="text-light mb-3">github</h4>
           <a class="btn-link" href="">https://github.com/Practice-i5/EatIT-FE</a>
           <a class="btn-link" href="">팀 노션</a>
         </div>
-</div>
-</div>
-        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Footer End -->
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Footer End -->
+
 
 </body>
 
