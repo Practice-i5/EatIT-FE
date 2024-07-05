@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hostReview.css">
+</head>
+
+<body>
+
+    <!-- 방장 평가창-->
+    <section>
+        <div class="mainCon">
+            <div class="writeTitle">방장 평가하기</div>
+            <form class="writeForm" action="board_process.php?mode=write" method="post">
+                <input type="hidden" name="id" value="review">
+
+                <p>
+                    <input class="writeTypeText" type="text" name="title" size="50" placeholder="제목을 입력해주세요" required>
+                </p>
+
+                <textarea class="writeTextarea" name="story" placeholder="본문을 입력해주세요" required></textarea>
+
+                <div class="writeBtn">
+                    <input type="submit" value="작성">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="취소" onclick="history.back(1)">
+                </div>
+            </form>
+        </div>
+    </section>
+
+   
+<!-- 선택창-->
+    <form action="#">
+        <label for="lang">Language</label>
+        <select name="languages" id="lang" multiple>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+            <option value="golang">Golang</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+            <option value="C++">C++</option>
+            <option value="erlang">Erlang</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form>
+
+    <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5" />
+        <label for="5-stars" class="star">&#9733;</label>
+        <input type="radio" id="4-stars" name="rating" value="4" />
+        <label for="4-stars" class="star">&#9733;</label>
+        <input type="radio" id="3-stars" name="rating" value="3" />
+        <label for="3-stars" class="star">&#9733;</label>
+        <input type="radio" id="2-stars" name="rating" value="2" />
+        <label for="2-stars" class="star">&#9733;</label>
+        <input type="radio" id="1-star" name="rating" value="1" />
+        <label for="1-star" class="star">&#9733;</label>
+    </div>
+</body>
+
+</html>
