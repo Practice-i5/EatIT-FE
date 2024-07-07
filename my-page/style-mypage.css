@@ -8,41 +8,42 @@
     grid-template-columns: 1fr 2fr 3fr  2fr 1fr;
 } */
 
-body{
-    margin: auto;;
+body {
+    margin: auto;
+    ;
 }
 
-.modal{
-    position:absolute;
-    display:none;
-    
+.modal {
+    position: absolute;
+    display: none;
+
     justify-content: center;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal_body{
-    position:absolute;
-    top:50%; 
+.modal_body {
+    position: absolute;
+    top: 50%;
 
 
-    width:400px;  
-    height:600px; 
+    width: 400px;
+    height: 600px;
 
-    padding:40px;  
+    padding: 40px;
 
     text-align: center;
 
-    background-color: rgb(255,255,255);
-    border-radius:10px; 
-    box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);  
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
 
-    transform:translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 
@@ -67,11 +68,11 @@ select{
     box-sizing: content-box;
 } */
 
-#notification-icon{
+#notification-icon {
     background-color: white;
 }
 
-#notification-icon:hover{
+#notification-icon:hover {
     background-color: gainsboro;
 }
 
@@ -87,26 +88,26 @@ select{
     justify-content: center;
 }
 
-.header-bar{
+.header-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 75%;
     max-width: 850px;
-    
+
 }
 
-.header-item{
+.header-item {
     display: flex;
     margin: 5px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: center;
 }
 
 
-.header a:hover{
-    color:red;
+.header a:hover {
+    color: red;
 }
 
 .bar {
@@ -124,35 +125,35 @@ select{
 }
 
 
-.profile input{
+.profile input {
     height: 30px;
     border-style: solid;
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
     flex-grow: 1;
-    margin:5px;
+    margin: 5px;
 }
 
 
-.profile select{
+.profile select {
     height: 30px;
     border-style: solid;
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
     flex-grow: 1;
-    margin:5px;
+    margin: 5px;
     box-sizing: content-box;
 }
 
-.profile textarea{
+.profile textarea {
     border-style: solid;
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
     flex-grow: 1;
-    margin:5px;
+    margin: 5px;
     resize: none;
 }
 
@@ -166,10 +167,10 @@ select{
     margin-bottom: auto;
 }
 
-.footer-link-block{
+.footer-link-block {
     width: 100%;
     margin: 10px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -190,20 +191,21 @@ select{
     color:black;
 } */
 
-.my-page-list{
-    float: right; 
-    border: solid 2px; 
+.my-page-list {
+    float: right;
+    border: solid 2px;
     border-radius: 10px;
-    padding:15px;
+    padding: 15px;
 }
+
 .my-page-list a {
     text-decoration: none;
 }
 
 .my-page-list a:hover {
-    color : red;
+    color: red;
     text-decoration: none;
-  }
+}
 
 .active-page {
     color: black;
@@ -225,11 +227,13 @@ select{
 } */
 
 .form-content {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
-    border:solid 2px;
+    border: solid 2px;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -237,11 +241,13 @@ select{
 .form-item {
     display: flex;
     /* align-items: center; */
-    margin:3px;
+    margin: 3px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 
 .profile-label {
@@ -253,24 +259,24 @@ select{
 
 /* interest : 관심사 설정쪽 */
 
-.interest-check{
+.interest-check {
     display: none;
 }
 
 
-.interest-label{
+.interest-label {
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.interest-label .interest-check{
-    color:white;
+.interest-label .interest-check {
+    color: white;
     background-color: red;
-    border-color:red;
+    border-color: red;
 }
 
-.interest-check+.interest-label{
+.interest-check+.interest-label {
     background-color: #ECECEC;
     border-color: #ECECEC;
     color: #707070;
@@ -281,10 +287,10 @@ select{
     background-color: red;
 } */
 
-.interest-check:checked~.interest-label{
-    color:white;
+.interest-check:checked~.interest-label {
+    color: white;
     background-color: red;
-    border-color:red;
+    border-color: red;
 }
 
 .form-message {
@@ -293,36 +299,39 @@ select{
     text-align: right;
 }
 
-.block-info{
+.block-info {
     display: flex;
     align-items: center;
 }
 
-.block-info-text{
+.block-info-text {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
 
-.block-modify{
+.block-modify {
     display: flex;
-    align-items:end;
+    align-items: end;
 }
 
-.sidebar-block{
+.sidebar-block {
     float: right;
     border: solid 2px;
     border-radius: 10px;
-    padding:15px;
+    padding: 15px;
 }
 
-.chip-btn-list{
+.chip-btn-list {
     max-width: 70%;
-    margin-left:5px; display:flex; flex-flow : wrap; align-items: center;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
 }
 
-.image-box{
-    border:solid;
+.image-box {
+    border: solid;
     border-width: 2px;
 }
