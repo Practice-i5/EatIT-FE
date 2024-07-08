@@ -8,19 +8,106 @@
     grid-template-columns: 1fr 2fr 3fr  2fr 1fr;
 } */
 
+body {
+    margin: auto;
+    ;
+}
+
+.modal {
+    position: absolute;
+    display: none;
+
+    justify-content: center;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_body {
+    position: absolute;
+    top: 50%;
+
+
+    width: 400px;
+    height: 600px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateY(-50%);
+}
+
+
 .container {
+    min-height: 100vh;
     display: grid;
     grid-template-areas:
         "header header header"
         "bar main ."
+        ". . ."
         "footer footer footer"
     ;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: auto 1fr auto;
     /* grid-template-columns: 1fr 2fr 3fr  2fr 1fr; */
 }
+
+
+/* 
+select{
+     input box와 크기를 맞춤 
+    box-sizing: content-box;
+} */
+
+#notification-icon {
+    background-color: white;
+}
+
+#notification-icon:hover {
+    background-color: gainsboro;
+}
+
+/* #intro{
+    height: 100px;
+} */
 
 .header {
     grid-area: header;
     text-align: center;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    max-width: 850px;
+
+}
+
+.header-item {
+    display: flex;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+
+.header a:hover {
+    color: red;
 }
 
 .bar {
@@ -37,10 +124,56 @@
     align-items: center;
 }
 
+
+.profile input {
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+
+.profile select {
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    flex-grow: 1;
+    margin: 5px;
+    box-sizing: content-box;
+}
+
+.profile textarea {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c2c2c2;
+    border-width: 2px;
+    flex-grow: 1;
+    margin: 5px;
+    resize: none;
+}
+
+
 .footer {
     grid-area: footer;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-bottom: auto;
 }
+
+.footer-link-block {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /* select{
@@ -50,7 +183,28 @@
     list-style-type: none;
     font-size: 20px;
     margin-bottom: 30px;
-    border-bottom: solid #ECECEC 3px;
+    border-bottom: solid #ECECEC 2px;
+}
+
+/* .bar-list a{
+    text-decoration: none;
+    color:black;
+} */
+
+.my-page-list {
+    float: right;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.my-page-list a {
+    text-decoration: none;
+}
+
+.my-page-list a:hover {
+    color: red;
+    text-decoration: none;
 }
 
 .active-page {
@@ -61,33 +215,83 @@
     color: #8e8c8c;
 }
 
-.form-input {
+
+/* .form-input {
     height: 30px;
     border-style: solid;
     border-radius: 5px;
     border-color: #c2c2c2;
     border-width: 2px;
     width: 70%;
+    margin:5px;
+} */
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
+
 
 .form-item {
     display: flex;
+    /* align-items: center; */
+    margin: 3px;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-.btn-submit {
-    width: 250px;
-    height: 32px;
-    border-radius: 25px;
-    border-style: none;
-    outline: solid;
-}
+
+
 
 .profile-label {
+    display: inline-block;
     text-align: left;
     width: 30%;
 }
 
+
+/* interest : 관심사 설정쪽 */
+
+.interest-check {
+    display: none;
+}
+
+
+.interest-label {
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.interest-label .interest-check {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.interest-check+.interest-label {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    color: #707070;
+}
+
+/* .interest-check+.interest-label:hover{
+    color:blue;
+    background-color: red;
+} */
+
+.interest-check:checked~.interest-label {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
 
 .form-message {
     font-size: 12px;
@@ -95,65 +299,39 @@
     text-align: right;
 }
 
-.warn {
-    color: #8c8c8c;
-    font-size: 12px;
+.block-info {
+    display: flex;
+    align-items: center;
 }
 
-.error {
-    color: red;
-    font-size: 12px;
+.block-info-text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
-.valid {
-    color: blue;
-    font-size: 12px;
+.block-modify {
+    display: flex;
+    align-items: end;
 }
 
-.btn-rw {
-    background-color: red;
-    color: white;
-    border-color: red;
+.sidebar-block {
+    float: right;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-.btn-rw:hover {
-    background-color: brown;
-    /* color: white; */
-    border-color: brown;
+.chip-btn-list {
+    max-width: 70%;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
 }
 
-.btn-wr {
-    background-color: white;
-    border-color: red;
-    color: red;
-}
-
-.btn-wr:hover {
-    background-color: #ECECEC;
-    /* border-color : #D0D0D0; */
-}
-
-.btn-gray {
-    background-color: #ECECEC;
-    border-color: #ECECEC;
-    color: #707070;
-
-}
-
-.btn-gray:hover {
-    background-color: #B0B0B0;
-    border-color: #B0B0B0;
-    color: #FFFFFF;
-}
-
-.btn-choice {
-    border-style: solid;
-    border-radius: 20px;
-    margin: 3px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    /* border-style: none; */
+.image-box {
+    border: solid;
+    border-width: 2px;
 }

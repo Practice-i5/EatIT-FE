@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>차단 회원 관리</title>
+        <link rel="stylesheet" href="style-mypage.css">
+        <link rel="stylesheet" href="components.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-bar">
+                    <img class="header-item logo" src="images/logo.png">
+                    <a class="header-item">홈</a>
+                    <a class="header-item">모임 등록</a>
+                    <a class="header-item">모임 찾기</a>
+                    <a class="header-item">후기</a>
+                    <div class="header-item">
+                        <button id="notification-icon"><img src="notification.png"></button>
+                        <button class="btn-choice-mid btn-wb">마이페이지</button>
+                        <button class="btn-choice-mid btn-wb">로그아웃</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="bar">
+                <div class="my-page-list sidebar-block">
+                    <h2>마이 페이지</h2>
+                    <ul class="list-no-pad">
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./profile.html">프로필 수정</a>
+                        </li>
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
+                        </li>
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
+                        </li>
+                        <li class="bar-list">
+                            <a class="active-page" href="./black-list.html">차단 회원 관리</a>
+                        </li>
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./account-info.html">계정 정보 보기</a>
+                        </li>
+                        <li class="bar-list">
+                            <a class="unactive-page" href="./withdraw.html">회원 탈퇴</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="profile">
+                <form class="form-content">
+                    <h2>차단 회원 관리</h2>
+                    <ul style="list-style: none; margin:10px; padding:0px">
+                        <li>
+                            <div class="form-item">
+                                <div class="block-info">
+                                    <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg"/>
+                                    <div class="block-info-text">
+                                        닉네임1
+                                        <p class="form-message warn">모임 시 비매너 행동</p>
+                                    </div>
+                                </div>
+
+                                <div class="block-modify">
+                                    <button>수정</button>
+                                    <button>삭제</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="form-item">
+                                <div class="block-info">
+                                    <img id="img-preview" src="images/profile_voodoo.jpg"/>
+                                    <div class="block-info-text">
+                                        부두술사
+                                        <p class="form-message warn">종교활동</p>
+                                    </div>
+                                </div>
+
+                                <div class="block-modify">
+                                    <button>수정</button>
+                                    <button>삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-item">
+                                <div class="block-info">
+                                    <img id="img-preview" src="images/profile_al nassr.svg"/>
+                                    <div class="block-info-text">
+                                        알 나스르
+                                        <p class="form-message warn">노쇼</p>
+                                    </div>
+                                </div>
+
+                                <div class="block-modify">
+                                    <button>수정</button>
+                                    <button>삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <footer class="footer">
+                <div class="footer-link-block">
+                    <a>고객서비스</a>
+                    <a>소셜미디어</a>
+
+                    <a>팀원소개</a>
+                    <a>github</a>
+                </div>
+                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+            </footer>
+        </div>
+    </body>
+</html>

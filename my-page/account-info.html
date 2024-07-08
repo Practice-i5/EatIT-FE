@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>비밀번호 수정</title>
+    <title>로그인 정보 수정</title>
     <link rel="stylesheet" href="style-mypage.css">
     <link rel="stylesheet" href="components.css">
 </head>
@@ -22,48 +23,74 @@
                 </div>
             </div>
         </div>
-        <div class="bar">
-            <div class="my-page-list" style="float: right; border: solid 2px; border-radius: 10px; padding:15px">
+
+        <aside class="bar">
+            <div class="my-page-list sidebar-block">
                 <h2>마이 페이지</h2>
-                <ul style="float:left; padding-left: 0px;">
+                <ul class="list-no-pad">
                     <li class="bar-list">
                         <a class="unactive-page" href="./profile.html">프로필 수정</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./interests.html">기술 프로필 설정</a>
+                        <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./visited-dining.html">참여한 모임 보기</a>
+                        <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./black-list.html">차단 내역 관리</a>
+                        <a class="unactive-page" href="./black-list.html">차단 회원 관리</a>
                     </li>
                     <li class="bar-list">
-                        <a class="active-page" href="./modify-password.html">비밀번호 변경</a>
+                        <a class="active-page" href="./account-info.html">계정 정보 보기</a>
                     </li>
                     <li class="bar-list">
-                        <a class="unactive-page" href="./withdraw.html" >회원 탈퇴</a>
+                        <a class="unactive-page" href="./withdraw.html">회원 탈퇴</a>
                     </li>
                 </ul>
             </div>
-        </div>
-
+        </aside>
 
         <div class="profile">
             <form class="form-content">
-                <h2>비밀번호 수정</h2>
+                <h2>로그인 정보 보기</h2>
+                <div class="form-item">
+                    <label class="profile-label">이름</label>
+                    <input class="form-input" type="text" placeholder="이름">
+                </div>
+                <p class="form-message warn">휴대폰 인증시 변경가능합니다</p>
+
+                <div class="form-item">
+                    <label class="profile-label">휴대폰 번호</label>
+                    <div style="display: flex; flex-grow:1">
+                        <input class="form-input" type="text" placeholder="휴대폰 번호">
+                        <button >변경하기</button>
+                    </div>
+                    
+                </div>
+                <p class="form-message warn">주의사항</p>
+                <p class="form-message error">에러 메세지</p>
+
+                <div class="form-item">
+                    <label class="profile-label">이메일</label>
+                    <input class="form-input" disabled placeholder="현재 아이디">
+                </div>
+
+                <div class="form-item">
+                    <label class="profile-label">소셜로그인 정보</label>
+                    네이버 계정임
+                </div>
+
+
                 <div class="form-item">
                     <label class="profile-label" for="get-nickname">기존 비밀번호</label>
                     <input class="form-input get-nickname" type="password" placeholder="기존 비밀번호 입력">
                 </div>
-                <p class="form-message warn">주의사항</p>
+                <p class="form-message warn">자체 회원 가입 유저만 변경 가능합니다.</p>
                 <p class="form-message error">에러 메세지</p>
                 <div class="form-item">
                     <label class="profile-label">새 비밀번호</label>
                     <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
                 </div>
-                <p class="form-message warn">주의사항</p>
-                <p class="form-message error">에러 메세지</p>
                 <div class="form-item">
                     <label class="profile-label">새 비밀번호</label>
                     <input class="form-input get-password" type="password" placeholder="새 비밀번호 입력">
@@ -86,5 +113,4 @@
         </footer>
     </div>
 </body>
-
 </html>
