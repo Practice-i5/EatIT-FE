@@ -13,6 +13,11 @@ body {
     ;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+}
+
 .modal {
     position: absolute;
     display: none;
@@ -157,6 +162,10 @@ select{
     resize: none;
 }
 
+.profile img {
+    width: 75px;
+    height:75px;
+}
 
 .footer {
     grid-area: footer;
@@ -229,7 +238,6 @@ select{
 .form-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 80%;
     border: solid 2px;
     border-radius: 10px;
@@ -334,4 +342,19 @@ select{
 .image-box {
     border: solid;
     border-width: 2px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.icon-image{
+    width: 30px;
+    height:30px;
+}
+
+
+.footer li{
+    list-style: none;
+    width: 20%;
 }
