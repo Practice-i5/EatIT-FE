@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <nav class="header">
                 <div class="header-bar">
                     <img class="header-item logo" src="images/logo.png">
                     <a class="header-item">홈</a>
@@ -17,12 +17,12 @@
                     <a class="header-item">모임 찾기</a>
                     <a class="header-item">후기</a>
                     <div class="header-item">
-                        <button id="notification-icon"><img src="notification.png"></button>
+                        <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
                         <button class="btn-choice-mid btn-wb">마이페이지</button>
                         <button class="btn-choice-mid btn-wb">로그아웃</button>
                     </div>
                 </div>
-            </div>
+            </nav>
 
             <aside class="bar">
                 <div class="my-page-list sidebar-block">
@@ -54,7 +54,7 @@
                 <form class="form-content">
                     <h2>기술 프로필 설정</h2>
                     <div class="form-item">
-                        <label class="profile-label">관심 개발 분야</label>
+                        <label class="profile-label">기술 스택</label>
                         <ul class="list-no-pad chip-btn-list">
                             <li style="margin-top:5px; margin-bottom: 10px;">
                                     <input id="intereset-1" class="interest-check" type="checkbox" value="frontend">
@@ -149,9 +149,17 @@
                 <div class="footer-link-block">
                     <a>고객서비스</a>
                     <a>소셜미디어</a>
-
                     <a>팀원소개</a>
                     <a>github</a>
+                </div>
+                <div style="width: 100%; align-items: center;">
+                    <ul style="margin:auto; display: flex; flex-direction: row; width: 50%; max-width: 450px;">
+                        <li>김도현</li>
+                        <li>김재협</li>
+                        <li>김혜진</li>
+                        <li>정현민</li>
+                        <li>홍관섭</li>
+                    </ul>
                 </div>
                 <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
             </footer>
