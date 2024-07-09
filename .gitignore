@@ -1,3 +1,6 @@
-.vscode/
 .DS_Store
-Detail/
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+.idea
+.vscode
