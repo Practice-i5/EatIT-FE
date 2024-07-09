@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>모임 목록</title>
+        <title>프로필 수정</title>
         <link rel="stylesheet" href="style-mypage.css">
         <link rel="stylesheet" href="components.css">
+        <script src="js-mypage.js"></script>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1
+		, user-scalable=yes,initial-scale=1.0" />
     </head>
     <body>
         <div class="container">
@@ -27,7 +30,7 @@
                     <h2>마이 페이지</h2>
                     <ul class="list-no-pad">
                         <li class="bar-list">
-                            <a class="unactive-page" href="./profile.html">프로필 수정</a>
+                            <a class="active-page" href="./profile.html">프로필 수정</a>
                         </li>
                         <li class="bar-list">
                             <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
@@ -50,66 +53,49 @@
 
             <div class="profile">
                 <form class="form-content">
-                    <h2>참여한 모임 목록</h2>
-                    <p class="form-message">날짜 순으로 최근 5개가 표시됩니다.</p>
+                    <h2>프로필 수정</h2>
                     <div class="form-item">
-                        <div class="block-info">
-                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
-                            <div class="block-info-text">
-                                판교 모각코
-                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
-                                    <li>모임장: 알 나스르</li>
-                                    <li>날짜 : 6/22 14:00</li>
-                                    <li>경기도 성남시 대왕판교로 어쩌구</li>
-                                </ul>
+                        <label class="profile-label">프로필 사진</label>
+                        <div class="form-input" style="width: 70%; display: flex; align-items: center; justify-content: space-between;">
+                            
+                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg"/>
+                            <div>
+                                <input id="img-file" style="display: none; width:0px; margin: 0px; padding: 0px;" type="file" accept="image/*"/>
+                                <label for="img-file" class="upload-btn btn-choice-small btn-wb">수정</label>
+                                <label class="reset-img btn-choice-small btn-wb">초기화</label>
                             </div>
-                        </div>
 
-                        <div class="block-modify">
-                            <button class="btn-choice-small btn-wb">채팅보기</button>
-                            <button class="btn-choice-small btn-wb">상세보기</button>
                         </div>
+                        
                     </div>
                     <div class="form-item">
-                        <div class="block-info">
-                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
-                            <div class="block-info-text">
-                                AI 스터디
-                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
-                                    <li>모임장: 카네라</li>
-                                    <li>날짜 : 7/11 21:00</li>
-                                    <li>메타버스 아카데미</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <label class="profile-label" for="get-nickname">닉네임</label>
+                        <input id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
+                    </div>
+                    <p class="form-message warn">주의사항이나 에러 메세지 나올거임</p>
 
-                        <div class="block-modify">
-                            <button class="btn-choice-small btn-wb">채팅보기</button>
-                            <button class="btn-choice-small btn-wb">상세보기</button>
-                        </div>
+                    <div class="form-item">
+                        <label class="profile-label">성별</label>
+                        <select>
+                            <option value="">성별</option>
+                            <option value="male">남성</option>
+                            <option value="female">여성</option>
+                        </select>
                     </div>
                     <div class="form-item">
-                        <div class="block-info">
-                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
-                            <div class="block-info-text">
-                                버거집 모임
-                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
-                                    <li>모임장: 킹</li>
-                                    <li>날짜 : 7/14 21:00</li>
-                                    <li>xx 수제버거</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="block-modify">
-                            <button class="btn-choice-small btn-wb">채팅보기</button>
-                            <button class="btn-choice-small btn-wb">상세보기</button>
-                        </div>
+                        <label class="profile-label" for="age">나이</label>
+                        <input class="form-input" id="age" type="number" placeholder="나이를 입력하세요.">
                     </div>
-                    <button type="button">전체보기</button>
+
+                    <div class="form-item">
+                        <label class="profile-label" for="intro">소개글</label>
+                        <textarea class="form-input" id="intro" placeholder="소개글을 입력하세요." rows="5"></textarea>
+                    </div>
+                    <p class="form-message error">에러 메시지</p>
+                    <button class="btn-rw btn-submit" type="submit">제출</button>
                 </form>
-                
             </div>
+                
             <footer class="footer">
                 <div class="footer-link-block">
                     <a>고객서비스</a>

@@ -60,7 +60,7 @@
 }
 
 .btn-choice-small {
-    border-style: solid;
+    border:2px solid;
     border-radius: 20px;
     margin: 3px;
     padding-top: 2px;

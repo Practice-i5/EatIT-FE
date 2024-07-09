@@ -5,6 +5,8 @@
     <title>회원탈퇴</title>
     <link rel="stylesheet" href="style-mypage.css">
     <link rel="stylesheet" href="components.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +19,10 @@
                 <a class="header-item">모임 찾기</a>
                 <a class="header-item">후기</a>
                 <div class="header-item">
-                    <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                    <span class="material-icons">
+                        notifications
+                        </span>
+                    <!-- <button id="notification-icon"><img class="icon-image" src="notification.png"></button> -->
                     <button class="btn-choice-mid btn-wb">마이페이지</button>
                     <button class="btn-choice-mid btn-wb">로그아웃</button>
                 </div>
@@ -50,17 +55,17 @@
         </aside>
 
         <div class="profile">
-            <form class="form-content">
+            <form class="form-content" id="withdraw-quest">
                 <h2>회원탈퇴</h2>
                 <h3>정말로 회원은 탈퇴하겠습니까?</h3>
                 <p>탈퇴시 해당 이메일로 재가입이 제한됩니다.</p>
-                <button class="btn-rw btn-submit" type="submit">탈퇴하기</button>
+                <button class="btn-rw btn-submit" id="withdraw-submit" type="button">탈퇴하기</button>
             </form>
-            <form class="form-content">
+            <form hidden class="unactive form-content" id="withdraw-done">
                 <h2>회원탈퇴 완료</h2>
                 <h3>회원 탈퇴가  완료되었습니다.</h3>
                 
-                <button class="btn-rw btn-submit" type="submit">홈으로</button>
+                <button class="btn-rw btn-submit" type="button">홈으로</button>
             </form>
         </div>
         <footer class="footer">
@@ -82,6 +87,7 @@
             <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
         </footer>
     </div>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
