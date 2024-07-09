@@ -7,7 +7,8 @@
 }
 
 
-body {
+html,body {
+    min-height: 100%;
     background-image: #34495e;
 }
 h1 {
@@ -158,4 +159,194 @@ h1 {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* .container {
+    display: grid;
+    grid-template-areas: 
+        ". header header header ."
+        ". bar main . ."
+        ". footer footer footer ."
+    ;
+    grid-template-columns: 1fr 2fr 3fr  2fr 1fr;
+} */
+
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.form-item {
+    display: flex;
+    /* align-items: center; */
+    margin: 3px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.profile-label {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+}
+
+
+/* interest : 관심사 설정쪽 */
+
+.interest-check {
+    display: none;
+}
+
+
+.interest-label {
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.interest-label .interest-check {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.interest-check+.interest-label {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    color: #707070;
+}
+
+/* .interest-check+.interest-label:hover{
+    color:blue;
+    background-color: red;
+} */
+
+.interest-check:checked~.interest-label {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.chip-btn-list {
+    max-width: 70%;
+    margin-left: 5px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+/* 버튼 */
+.warn {
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.valid {
+    color: blue;
+    font-size: 12px;
+}
+
+.btn-rw {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.btn-rw:hover {
+    background-color: brown;
+    /* color: white; */
+    border-color: brown;
+}
+
+.btn-wr {
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+.btn-wr:hover {
+    background-color: #ECECEC;
+    /* border-color : #D0D0D0; */
+}
+
+.btn-gray {
+    background-color: #ECECEC;
+    border-color: #ECECEC;
+    color: #707070;
+
+}
+
+.btn-gray:hover {
+    background-color: #B0B0B0;
+    border-color: #B0B0B0;
+    color: #FFFFFF;
+}
+
+.btn-wb{
+    background-color: white;
+    color: black;
+}
+
+.btn-wb:hover{
+    background-color: gainsboro;
+}
+
+.btn-choice-small {
+    border-style: solid;
+    border-radius: 20px;
+    margin: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+
+    /* border-style: none; */
+}
+
+.btn-choice-mid {
+    border-style: solid;
+    border-radius: 20px;
+    height:30px;
+    margin: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+
+
+    /* border-style: none; */
+}
+
+.btn-submit {
+    width: 250px;
+    height: 32px;
+    border-radius: 25px;
+    border-style: none;
+    margin:auto;
+    outline: solid;
+}
+
+.list-no-pad{
+    list-style: none;
+    float:left;
+    padding-left: 0px;
 }
