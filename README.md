@@ -1,9 +1,6 @@
 # EatIT
-<div>
 
 ![gitlogo](https://github.com/Practice-i5/EatIT-FE/assets/94904427/6c0d45fb-c4d0-40e7-b559-f85da3957782)
-</div>
-Dining Service for Devloper
 
 ## :busts_in_silhouette: Team Members ##
 
