@@ -213,13 +213,13 @@ function toggleFavorite(event) {
 function toggleFavorite(event, iconId) {
     event.preventDefault();
     var heartIcon = document.getElementById(iconId);
-    
-    // Font Awesome 클래스를 토글하여 빈 하트와 채워진 하트를 교체
+
+    // Font Awesome 클래스를 토글하여 빈 하트와 채워진 하트를 교체 // far : 빈 하트, fas : 채워진 하트
     if (heartIcon.classList.contains('far')) {
         heartIcon.classList.remove('far');
         heartIcon.classList.add('fas'); // 채워진 하트 클래스
         heartIcon.classList.remove('text-primary');
-        heartIcon.classList.add('text-pink'); // 분홍색 클래스
+        heartIcon.classList.add('text-pink'); // 주황색 클래스
     } else {
         heartIcon.classList.remove('fas');
         heartIcon.classList.add('far'); // 빈 하트 클래스

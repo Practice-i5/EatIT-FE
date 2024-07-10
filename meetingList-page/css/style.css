@@ -660,6 +660,6 @@ button#showAllButton:hover {
 .text-primary {
   color: #007bff; /* 원래 하트 색 */
 }
-.text-pink {
-  color: #e83e8c; /* 분홍색 */
+.text-orange {
+  color: #fd7e14; /* 주황색 */
 }
