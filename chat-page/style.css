@@ -75,7 +75,9 @@ body {
 .chat-sidebar-menu > * > a:hover {
   color: var(--slate-600);
 }
-.chat-sidebar-menu > .active > a {
+
+.menu-group-1,
+.menu-group-2 {
   box-shadow: inset 4px 0 0 0 var(--emerald-500);
   color: var(--emerald-600);
   background-color: var(--emerald-100);
@@ -763,3 +765,8 @@ body {
   }
 }
 /* end: Breakpoints */
+
+/* 추가된 스타일 */
+.menu-text {
+  font-size: 15px; /* 원하는 글씨 크기로 조절 */
+}
