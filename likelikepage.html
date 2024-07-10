@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜한 모임</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 font-noto-sans-kr">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-6">찜한 모임</h1>
+        
+        <!-- 네비게이션 버튼들 -->
+        <div class="flex space-x-4 mb-6">
+            <button class="nav-button-active">찜한 모임</button>
+            <button class="nav-button">참여 전 모임</button>
+            <button class="nav-button">참여중인 모임</button>
+            <button class="nav-button">완료된 모임</button>
+        </div>
+
+        <!-- 모임 카드 그리드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="meeting-card">
+                <img src="https://source.unsplash.com/random/400x200?brunch" alt="브런치카페"
+                    class="meeting-image cursor-pointer">
+                <div class="p-4">
+                    <span class="tag">프론트엔드</span>
+                    <h2 class="meeting-title">브런치카페</h2>
+                    <p class="meeting-description">맛있는 브런치먹고 힘내봅시다<br>[시니어 프론트 개발자 모임]</p>
+                    <div class="flex items-center mt-4">
+                        <img src="https://source.unsplash.com/random/40x40?person" alt="profile"
+                            class="profile-image">
+                        <span class="ml-2 text-gray-600">1/3명</span>
+                    </div>
+                    <p class="meeting-date">2024.07.01(월) 오후 12:00</p>
+                    <button class="bookmark-button">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        찜하기
+                    </button>
+                </div>
+            </div>
+            <!-- 다른 모임 카드들을 위의 블록을 반복해서 추가 -->
+        </div>
+    </div>
+
+    <script type="module">
+        document.querySelectorAll('.bookmark-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('bg-yellow-400');
+                button.classList.toggle('text-white');
+                button.classList.toggle('bg-white');
+                button.classList.toggle('text-gray-700');
+                button.querySelector('svg').classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
