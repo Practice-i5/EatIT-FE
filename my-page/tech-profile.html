@@ -2,10 +2,9 @@
 <html>
     <head>
         <title>기술 프로필 설정</title>
-        <link rel="stylesheet" href="style-mypage.css">
-        <link rel="stylesheet" href="components.css">
-        <link rel="stylesheet" href="modal.css">
-        <script src="interests.js"></script>
+        <link rel="stylesheet" href="css/style-mypage.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/modal.css">
     </head>
     <body>
         <div id="profile-modal">
@@ -18,7 +17,7 @@
                     <div>
                         <div>
                             <h5>회사명</h5>
-                            <input type="text">
+                            <input type="text" required>
                         </div>
                         <div>
                             <h5>재직 기간</h5>
@@ -27,7 +26,7 @@
                         </div>
                         <div>
                             <h5>개발 업무</h5>
-                            <input type="text">
+                            <input type="text" required>
                         </div>
                     </div>
                     <div style="display:flex; justify-content:center">
@@ -48,7 +47,7 @@
                     <a class="header-item">모임 찾기</a>
                     <a class="header-item">후기</a>
                     <div class="header-item">
-                        <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                        <button id="notification-icon"><img class="icon-image" src="images/notification.png"></button>
                         <button class="btn-choice-mid btn-wb">마이페이지</button>
                         <button class="btn-choice-mid btn-wb">로그아웃</button>
                     </div>
@@ -86,7 +85,7 @@
                     <h2>기술 프로필 설정</h2>
                     <div class="form-item">
                         <label class="profile-label">기술 스택</label>
-                        <ul class="list-no-pad chip-btn-list">
+                        <ul class="list-no-pad form-size-limit chip-btn-list">
                             <li style="margin-top:5px; margin-bottom: 10px;">
                                     <input id="intereset-1" class="interest-check" type="checkbox" value="frontend">
                                     <label class="btn-choice-mid interest-label"for="intereset-1">프론트엔드</label>
@@ -149,32 +148,34 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="./tech-stack.html" > 기술 스택 수정</a>
+                    <!-- <a href="./tech-stack.html" > 기술 스택 수정</a> -->
                     <div class="form-item" id="nickname-form">
-                        <label>개발 경력 설정</label>
-                        <div style="width: 65%;">
+                        <label>개발 경력</label>
+                        <div style="width: 70%;">
                             <ul style="margin-left:5px; list-style: none; padding-left: 0px; display:flex; flex-flow : column wrap; align-items: baseline;">
                                 <li style="display: flex; justify-content: space-between; width: 100%;">
-                                    <div>회사1</div>
-                                    <div>2020.02~2021.02</div>
-                                    <div><button>수정</button><button>삭제</button></div>
-                                </li>
-                                <li style="display: flex; justify-content: space-between; width: 100%;">
-                                    <div>네이버 백엔드 개발</div>
-                                    <div><button>수정</button><button>삭제</button></div>
+                                    <div style="display: flex; flex-direction: column; align-items: baseline;">
+                                        <h3 style="margin:0px">현대오토에버</h3>
+                                        <p class="form-message-mini warn"> 백엔드 개발</p>
+                                        <p class="form-message-mini warn">2022.10~2023.11</p>
+                                    </div>
+                                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                                        <button class="btn-choice-small btn-wb">수정</button>
+                                        <button class="btn-choice-small btn-wb">삭제</button>
+                                    </div> 
                                 </li>
                                 <li style="display: flex; justify-content: space-between; width: 100%;">
                                     <div style="display: flex; flex-direction: column; align-items: baseline;">
                                         <h3 style="margin:0px">네이버</h3>
                                         <p class="form-message-mini warn"> 백엔드 개발</p>
-                                        <p class="form-message-mini warn">2022.10~2023.11</p>
+                                        <p class="form-message-mini warn">2023.11~재직 중</p>
                                     </div>
                                     <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                                        <button>수정</button>
-                                        <button>삭제</button>
+                                        <button class="btn-choice-small btn-wb">수정</button>
+                                        <button class="btn-choice-small btn-wb">삭제</button>
                                     </div> 
                                 </li>
-                                <li style="float: right;"><button type="button" id="add-experience">추가</button></li>
+                                <li style="float: right;"><button type="button" class="btn-choice-small btn-wb" id="add-experience">경력 사항 추가</button></li>
                             </ul>
                         </div>
                     </div>
@@ -197,9 +198,9 @@
                         <li>홍관섭</li>
                     </ul>
                 </div>
-                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+                <img src="images/git_image.png" style="width: 50%; min-width: 200px;max-width: 450px;">
             </footer>
         </div>
-        <script src="tech-profile-modal.js"></script>
+        <script src="js/tech-profile-modal.js"></script>
     </body>
 </html>

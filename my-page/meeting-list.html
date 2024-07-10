@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>모임 목록</title>
-        <link rel="stylesheet" href="style-mypage.css">
-        <link rel="stylesheet" href="components.css">
+        <link rel="stylesheet" href="css/style-mypage.css">
+        <link rel="stylesheet" href="css/button.css">
     </head>
     <body>
         <div class="container">
@@ -15,7 +15,7 @@
                     <a class="header-item">모임 찾기</a>
                     <a class="header-item">후기</a>
                     <div class="header-item">
-                        <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                        <button id="notification-icon"><img class="icon-image" src="images/notification.png"></button>
                         <button class="btn-choice-mid btn-wb">마이페이지</button>
                         <button class="btn-choice-mid btn-wb">로그아웃</button>
                     </div>
@@ -52,7 +52,50 @@
                 <form class="form-content">
                     <h2>참여한 모임 목록</h2>
                     <p class="form-message">날짜 순으로 최근 5개가 표시됩니다.</p>
-                    <div class="form-item">
+                    <ul class="form-list-block">
+                        <li>
+                            <div class="form-item">
+                                <div class="block-info">
+                                    <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
+                                    <div class="block-info-text">
+                                        판교 모각코
+                                        <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
+                                            <li>모임장: 알 나스르</li>
+                                            <li>날짜 : 6/22 14:00</li>
+                                            <li>경기도 성남시 대왕판교로 어쩌구</li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="block-modify">
+                                    <button class="btn-choice-small btn-wb">채팅보기</button>
+                                    <button class="btn-choice-small btn-wb">상세보기</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-item">
+                                <div class="block-info">
+                                    <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
+                                    <div class="block-info-text">
+                                        AI 스터디
+                                        <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
+                                            <li>모임장: 카네라</li>
+                                            <li>날짜 : 7/11 21:00</li>
+                                            <li>메타버스 아카데미</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="block-modify">
+                                    <button class="btn-choice-small btn-wb">채팅보기</button>
+                                    <button class="btn-choice-small btn-wb">상세보기</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <!-- <div class="form-item">
                         <div class="block-info">
                             <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
                             <div class="block-info-text">
@@ -60,7 +103,7 @@
                                 <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
                                     <li>모임장: 알 나스르</li>
                                     <li>날짜 : 6/22 14:00</li>
-                                    <li>경기도 성남시 대왕판교로 어쩌구</li>
+                                    <li>경기도 성남시 분당구 대왕판교로 xx번길</li>
                                 </ul>
                             </div>
                         </div>
@@ -70,43 +113,8 @@
                             <button class="btn-choice-small btn-wb">상세보기</button>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <div class="block-info">
-                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
-                            <div class="block-info-text">
-                                AI 스터디
-                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
-                                    <li>모임장: 카네라</li>
-                                    <li>날짜 : 7/11 21:00</li>
-                                    <li>메타버스 아카데미</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="block-modify">
-                            <button class="btn-choice-small btn-wb">채팅보기</button>
-                            <button class="btn-choice-small btn-wb">상세보기</button>
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <div class="block-info">
-                            <img id="img-preview" src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg" class="image-box" />
-                            <div class="block-info-text">
-                                버거집 모임
-                                <ul style="list-style: none; font-size: 10px; text-align: left; padding-left: 0px; margin-top: 0px;" >
-                                    <li>모임장: 킹</li>
-                                    <li>날짜 : 7/14 21:00</li>
-                                    <li>xx 수제버거</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="block-modify">
-                            <button class="btn-choice-small btn-wb">채팅보기</button>
-                            <button class="btn-choice-small btn-wb">상세보기</button>
-                        </div>
-                    </div>
-                    <button type="button">전체보기</button>
+                    -->
+                    <button type="button" class="btn-submit btn-rw">전체보기</button>
                 </form>
                 
             </div>
@@ -126,7 +134,7 @@
                         <li>홍관섭</li>
                     </ul>
                 </div>
-                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+                <img src="images/git_image.png" style="width: 50%; min-width: 200px;max-width: 450px;">
             </footer>
         </div>
     </body>

@@ -2,10 +2,9 @@
 <html>
     <head>
         <title>기술 프로필 설정</title>
-        <link rel="stylesheet" href="style-mypage.css">
-        <link rel="stylesheet" href="components.css">
-        <link rel="stylesheet" href="modal.css">
-        <script src="interests.js"></script>
+        <link rel="stylesheet" href="css/style-mypage.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/modal.css">
     </head>
     <body>
         <div id="profile-modal">
@@ -16,6 +15,10 @@
                 </div>
                 <form class="profile-contents">
                     <div>
+                        <div>
+                            <h5>개발 내용</h5>
+                            <input type="text">
+                        </div>
                         <div>
                             <h5>회사명</h5>
                             <input type="text">
@@ -48,7 +51,7 @@
                     <a class="header-item">모임 찾기</a>
                     <a class="header-item">후기</a>
                     <div class="header-item">
-                        <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                        <button id="notification-icon"><img class="icon-image" src="images/notification.png"></button>
                         <button class="btn-choice-mid btn-wb">마이페이지</button>
                         <button class="btn-choice-mid btn-wb">로그아웃</button>
                     </div>
@@ -151,7 +154,7 @@
                     </div>
 
             
-                    <button class="btn-rw btn-submit" type="submit">수정</button>
+                    <button class="btn-rw btn-submit" type="button" onclick="location.href='./tech-profile.html'">수정</button>
                 </form>
             </div>
             <footer class="footer">
@@ -170,9 +173,9 @@
                         <li>홍관섭</li>
                     </ul>
                 </div>
-                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+                <img src="images/git_image.png" style="width: 50%; min-width: 200px;max-width: 450px;">
             </footer>
         </div>
-        <script src="tech-profile-modal.js"></script>
+        <script src="js/tech-profile-modal.js"></script>
     </body>
 </html>
