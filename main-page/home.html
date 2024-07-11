@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>Eat IT</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <title>Eat IT</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -44,10 +35,19 @@
             max-height: none; /* 메인 이미지에는 최대 높이를 제한하지 않음 */
         }
 
-        .other-image {
-            max-height: 140px; /* 다른 이미지의 최대 높이를 140px로 제한 */
-        }
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .main-image {
+      max-height: none;
+      /* 메인 이미지에는 최대 높이를 제한하지 않음 */
+    }
+
+ 
         .carousel-inner img {
             vertical-align: middle; /* 모든 이미지에 대해 중간 정렬 */
         }
@@ -55,27 +55,43 @@
       
   </head>
 
-  <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script> <!-- Link to your main.js file -->
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+    .other-image {
+      max-height: 140px;
+      /* 다른 이미지의 최대 높이를 140px로 제한 */
+    }
 
-    <!-- Navbar start  수정한 부분-- 헤더 부분!-->
-<div class="container-fluid fixed-top">
-  <div class="container px-0">
-    <nav class="navbar navbar-light bg-white navbar-expand-xl">
-      <a href="home.html" class="navbar-brand">
+
+    .carousel-inner img {
+      vertical-align: middle;
+      /* 모든 이미지에 대해 중간 정렬 */
+    }
+
+    /* Font Awesome CSS */
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qN7QCwYGdMQJvFTT9s1t23K3+XkXW6bYAt8+ft+K2Deyi1YlnbqRIMOF7WpXz3lk2UDIyNOX6g6b0OhR6W5f4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </style>
+
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script> <!-- Link to your main.js file -->
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar start  수정한 부분-- 헤더 부분!-->
+  <div class="container-fluid fixed-top">
+    <div class="container px-0">
+      <nav class="navbar navbar-light bg-white navbar-expand-xl">
+        <a href="home.html" class="navbar-brand">
           <img src="/main-page/img/image_145.png" alt="Eat-IT Logo">
+
         <h1 class="text-primary display-6">Eat-IT</h1>
         
       </a>
@@ -94,1000 +110,485 @@
           <a href="search.html" class="nav-item nav-link">모임찾기</a>
           <a href="before-meetingList-page.html" class="nav-item nav-link">모임목록</a>
         </div>
+
+          <h1 class="text-primary display-6">Eat-IT</h1>
+
+        </a>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="home.html" class="nav-item nav-link active">홈</a>
+            <a href="../enroll-meeting/index.html" class="nav-item nav-link">모임등록</a>
+            <a href="../search/list.html" class="nav-item nav-link">모임찾기</a>
+            <a href="#" class="nav-item nav-link">후기</a>
+          </div>
+
           <!-- 알림, 로그인, 회원가입 버튼 추가 -->
-           
+
           <a href="#" class="btn-notification my-auto me-4">
             <i class="fas fa-bell fa-2x"></i>
-            <span
-              class="position-absolute bg-danger rounded-circle"
+            <span class="position-absolute bg-danger rounded-circle"
               style="top: 0; right: 0; width: 10px; height: 10px;"></span>
           </a>
-           <!-- JavaScript 파일 연결 -->
-          <button class="btn btn-danger rounded-pill me-2" id="loginButton">로그인</button>
+          <!-- JavaScript 파일 연결 -->
+          <button class="btn btn-danger rounded-pill me-2" onclick="location.href='../newPagetemplate/newlogin.html'"
+            id="loginButton">로그인</button>
           <button class="btn btn-outline-danger rounded-pill" id="signupButton">회원가입</button>
         </div>
-      </div>
+    </div>
     </nav>
   </div>
-</div>
-<!-- Navbar End -->
- <!-- 일단 이렇게 해야 페이지 이동될 수 있어서 이 방식으로 했는데, 추후에 js로 분리시켜야 함-->
- <script src="js/main.js"></script>
-<script>
+  </div>
+  <!-- Navbar End -->
+  <!-- 일단 이렇게 해야 페이지 이동될 수 있어서 이 방식으로 했는데, 추후에 js로 분리시켜야 함-->
+  <script src="js/main.js"></script>
+  <script>
     // JavaScript for login and signup buttons
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('loginButton').addEventListener('click', function() {
-            window.location.href = 'login.html'; // Navigate to login.html
+            window.location.href = '../newPagetemplate/newlogin.html'; // Navigate to login.html
         });
 
         document.getElementById('signupButton').addEventListener('click', function() {
-            window.location.href = 'join.html'; // Navigate to join.html
+            window.location.href = '../newPagetemplate/newJoin.html'; // Navigate to join.html
         });
     });
-</script>
- 
+  </script>
 
-    <!-- Modal Search Start -->
-    <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span id="search-icon-1" class="input-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Search by keyword
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal Search End -->
+  </div>
+  <!-- Modal Search End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid py-5 mb-5 hero-header">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-md-12 col-lg-7">
-            <h4 class="mb-3 text-secondary">소소한 it 소모임 </h4>
-            <h5 class="mb-5 display-7 text-primary">
-              관심 개발 분야 🔍
-            </h5>
-            <div class="position-relative mx-auto">
-              <input
-                class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill"
-                type="number"
-                placeholder="Search"
-              />
-              <button
-                type="submit"
+  <!-- Hero Start -->
+  <div class="container-fluid py-5 mb-5 hero-header">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-12 col-lg-7">
+          <h4 class="mb-3 text-secondary">소소한 it 소모임 </h4>
+          <h5 class="mb-5 display-7 text-primary">
+            관심 개발 분야 🔍
+          </h5>
+          <div class="position-relative mx-auto">
+            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number"
+              placeholder="Search" />
+            <button type="submit"
+              class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
+              style="top: 0; right: 25%">
+              검색
+            </button>
+            <form id="searchForm" method="get" action="search.html">
+              <button type="submit"
                 class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
-                style="top: 0; right: 25%"
-              >
+                style="top: 0; right: 25%">
                 검색
               </button>
-              <form id="searchForm" method="get" action="search.html">
-    <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%">
-        검색
-    </button>
-</form>
-            </div>
+            </form>
           </div>
-          <div class="col-md-12 col-lg-5">
-            <div
-              id="carouselId"
-              class="carousel slide position-relative"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active rounded">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_640.jpg"
-                    class="main-image img-fluid w-100 h-100 bg-secondary rounded"
-                    alt="First slide"
-                  />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
+        </div>
+        <div class="col-md-12 col-lg-5">
+          <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active rounded">
+                <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_640.jpg"
+                  class="main-image img-fluid w-100 h-100 bg-secondary rounded" alt="First slide" />
+                <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
                     >즐거운 식사</a
                   > -->
-                </div>
-                <div class="carousel-item rounded">
-                  <img
-                    src="/main-page/img/image_163.png"
-                    class="main-image img-fluid w-100 h-100 rounded"
-                    alt="Second slide"
-                  />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
+              </div>
+              <div class="carousel-item rounded">
+                <img src="/main-page/img/image_163.png" class="main-image img-fluid w-100 h-100 rounded"
+                  alt="Second slide" />
+                <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
                     >정보 공유</a
                   > -->
-                </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Hero End -->
+  </div>
+  <!-- Hero End -->
 
-    <!-- 관심 개발 분야 목록-->
-    <div class="container-fluid fruite py-5">
-      <div class="container py-5">
-        <div class="tab-class text-center">
-          <div class="row g-4">
-            <div class="col-lg-4 text-start">
-              <h2>관심 개발 분야</h2>
-            </div>
-            <div class="col-lg-8 text-end">
-              <ul class="nav nav-pills d-inline-flex text-center mb-5">
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill active"
-                    data-bs-toggle="pill"
-                    href="#tab-1"
-                  >
-                    <span class="text-dark" style="width: 130px"
-                      >프론트엔드</span
-                    >
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex py-2 m-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-2"
-                  >
-                    <span class="text-dark" style="width: 130px"
-                      >백엔드</span
-                    >
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-3"
-                  >
-                    <span class="text-dark" style="width: 130px">기획</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-4"
-                  >
-                    <span class="text-dark" style="width: 130px">게임 클라이언트</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">인공지능</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">정보보안</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">모바일</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">데이터엔지니어링</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">게임 서버</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">블록체인</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">클라우드</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="d-flex m-2 py-2 bg-light rounded-pill"
-                    data-bs-toggle="pill"
-                    href="#tab-5"
-                  >
-                    <span class="text-dark" style="width: 130px">UI/UX</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <!-- 관심 개발 분야 목록-->
+  <div class="container-fluid fruite py-5">
+    <div class="container py-5">
+      <div class="tab-class text-center">
+        <div class="row g-4">
+          <div class="col-lg-4 text-start">
+            <h2>관심 개발 분야</h2>
           </div>
-          <!-- 관심 개발 분야 음식점 목록 나오는 곳-->
-          <div class="tab-content">
-            <div id="tab-1" class="tab-pane fade show p-0 active">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <!-- 이 부분이 관심 개발 분야 네모 상자인데, 클래스 이름 변경 해야 함!-->
-                     
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>브런치카페</h4>
-                          <p>
-                            맛있는 브런치먹고 힘내봅시다
-                            <br>
-                            [시니어 프론트 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.07.01(월) 오후 12:00
-                            </p>
-                            <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                            
-                          </div>
-                        </div>
+          <div class="col-lg-8 text-end">
+            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                  <span class="text-dark" style="width: 130px">프론트엔드</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                  <span class="text-dark" style="width: 130px">백엔드</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                  <span class="text-dark" style="width: 130px">기획</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                  <span class="text-dark" style="width: 130px">게임 클라이언트</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">인공지능</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">정보보안</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">모바일</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">데이터엔지니어링</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">게임 서버</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">블록체인</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">클라우드</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                  <span class="text-dark" style="width: 130px">UI/UX</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 관심 개발 분야 음식점 목록 나오는 곳-->
+        <div class="tab-content">
+          <div id="tab-1" class="tab-pane fade show p-0 active">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <!-- 이 부분이 관심 개발 분야 네모 상자인데, 클래스 이름 변경 해야 함!-->
+
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
                       </div>
-                    </div>
-                    
-                   <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>통닭식당</h4>
-                          <p>
-                            통닭먹고 파이팅
-                            <br> 
-                            [신입 프론트 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                             2024.06.29(토) 오후 5:00
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
                       </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>프랑스식당</h4>
-                          <p>
-                           양식 먹고 정보 공유하실분~! 
-                          <br> [판교 프론트 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>브런치카페</h4>
+                        <p>
+                          맛있는 브런치먹고 힘내봅시다
+                          <br>
+                          [시니어 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
                           <!-- 프로필 추가하는 부분-->
                           <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
                             <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.06.29(토) 오후 1:00
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>브런치카페</h4>
-                          <p>
-                            맛있는 브런치먹고 힘내봅시다
-                            <br>
-                            [시니어 프론트 개발자 모임]
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.07.01(월) 오후 12:00
                           </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.07.01(월) 오후 12:00
-                            </p>
-                            <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>통닭식당</h4>
-                          <p>
-                            통닭먹고 파이팅
-                            <br> 
-                            [신입 프론트 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                             2024.06.29(토) 오후 5:00
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/09/30/15/10/plate-2802332_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>피자맛집</h4>
-                          <p>
-                            맛있는 피자 먹고 취뽀 가보자!!!
-                            <br>
-                            [프론트 개발자 지망생 & 개발 멘토 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.06.30(일) 오후 1:00
-                            </p>
-                            <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2023/07/20/16/11/bibimbap-8139739_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>비빔밥맛집</h4>
-                          <p>
-                            프론트 정보 공유 합시다
-                            <br>
-                            [성장하는 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.06.29(토) 오후 5:30
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          프론트엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Grapes</h4>
-                          <p>
-                            점심시간에 커피 한 잔 어때요? 
-                            <br>
-                            [판교역 근처 프론트 개발자 모임]
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.07.01(월) 오전 11:30
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 백엔드 -->
-            <div id="tab-2" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2018/04/02/18/29/food-3284704_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          백엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>삼겹살맛집</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                             시간 기간
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/08/02/00/51/food-2569257_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          백엔드
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>치킨</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-3" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          기획
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Oranges</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                             기간, 시간
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2023/07/26/16/43/food-8151625_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          기획
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>파스타 맛집</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                            <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-4" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          게임 클라이언트
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Grapes</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          게임 클라이언트
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Apricots</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab-5" class="tab-pane fade show p-0">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2020/10/01/22/39/gourmet-5619887_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          인공지능 
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Banana</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                            <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
-                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2020/11/04/13/13/dessert-5712284_640.jpg"
-                            class="other-image img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          정보보안
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Raspberries</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
                           <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
                             <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
-                            </a>
-                             <!-- Custom JavaScript -->
-                            <script src="main.js"></script>
-                          </div>
+                          </a>
+
                         </div>
                       </div>
                     </div>
-                 
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>통닭식당</h4>
+                        <p>
+                          통닭먹고 파이팅
+                          <br>
+                          [신입 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 5:00
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>프랑스식당</h4>
+                        <p>
+                          양식 먹고 정보 공유하실분~!
+                          <br> [판교 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 1:00
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>브런치카페</h4>
+                        <p>
+                          맛있는 브런치먹고 힘내봅시다
+                          <br>
+                          [시니어 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.07.01(월) 오후 12:00
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>통닭식당</h4>
+                        <p>
+                          통닭먹고 파이팅
+                          <br>
+                          [신입 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 5:00
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/30/15/10/plate-2802332_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>피자맛집</h4>
+                        <p>
+                          맛있는 피자 먹고 취뽀 가보자!!!
+                          <br>
+                          [프론트 개발자 지망생 & 개발 멘토 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.30(일) 오후 1:00
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/20/16/11/bibimbap-8139739_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>비빔밥맛집</h4>
+                        <p>
+                          프론트 정보 공유 합시다
+                          <br>
+                          [성장하는 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.06.29(토) 오후 5:30
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        프론트엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Grapes</h4>
+                        <p>
+                          점심시간에 커피 한 잔 어때요?
+                          <br>
+                          [판교역 근처 프론트 개발자 모임]
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            2024.07.01(월) 오전 11:30
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1096,116 +597,411 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- JavaScript 파일 연결 -->
-    <script src="main.js"></script>
-    <!-- Fruits Shop End-->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-      <div class="container py-5">
-        <div
-          class="pb-4 mb-4"
-          style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)"
-        >
-          <div class="row g-4">
-            <div class="col-lg-3">
-              <a href="#">
-                <h1 class="text-primary mb-0">Eat IT</h1>
-                <p class="text-secondary mb-0">먹고 마시며 즐기는 인맥 확장의 기회!<br>
-                                소소한 IT 소모임 “Eat IT”
-                                <br>🍽️🍝🍦🍕🍣🍳🍛🌭🍰🍛🍚🍮🌮☕️</p>
-              </a>
+          <!-- 백엔드 -->
+          <div id="tab-2" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2018/04/02/18/29/food-3284704_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        백엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>삼겹살맛집</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            시간 기간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/02/00/51/food-2569257_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        백엔드
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>치킨</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div id="tab-3" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        기획
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Oranges</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간, 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/26/16/43/food-8151625_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        기획
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>파스타 맛집</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-4" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        게임 클라이언트
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Grapes</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        게임 클라이언트
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Apricots</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-5" class="tab-pane fade show p-0">
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2020/10/01/22/39/gourmet-5619887_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        인공지능
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Banana</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                      <div class="fruite-img">
+                        <img src="https://cdn.pixabay.com/photo/2020/11/04/13/13/dessert-5712284_640.jpg"
+                          class="other-image img-fluid w-100 rounded-top" alt="" />
+                      </div>
+                      <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; left: 10px">
+                        정보보안
+                      </div>
+                      <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                        <h4>Raspberries</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit sed do eiusmod te incididunt
+                        </p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                          <!-- 프로필 추가하는 부분-->
+                          <div class="profile-container">
+                            <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg"
+                              alt="Profile Picture" class="profile-image">
+                            <span class="profile-text">1/3명</span>
+                          </div>
+                          <p class="text-dark fs-5 fw-bold mb-0">
+                            기간 시간
+                          </p>
+                          <a href="like-page.html" class="icon" onclick="toggleFavorite(event)">
+                            <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
+                          </a>
+                          <!-- Custom JavaScript -->
+                          <script src="main.js"></script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="text-light mb-3">NOTICE</h4>
-              <p class="mb-4">
-               공지사항
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- JavaScript 파일 연결 -->
+  <script src="main.js"></script>
+  <!-- Fruits Shop End-->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+      <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <a href="#">
+              <h1 class="text-primary mb-0">Eat IT</h1>
+              <p class="text-secondary mb-0">먹고 마시며 즐기는 인맥 확장의 기회!<br>
+                소소한 IT 소모임 “Eat IT”
+                <br>🍽️🍝🍦🍕🍣🍳🍛🌭🍰🍛🍚🍮🌮☕️
               </p>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="d-flex flex-column text-start footer-item">
-              <h4 class="text-light mb-3">ABOUT US</h4>
-              <a class="btn-link" href="">Eat IT 소개</a>
-              <a class="btn-link" href="">회사 소개</a>
-              <a class="btn-link" href="">인재 채용</a>
-            </div>
-          </div>
-        <div class="col-lg-3 col-md-6">
+        </div>
+      </div>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-item">
+          <h4 class="text-light mb-3">NOTICE</h4>
+          <p class="mb-4">
+            공지사항
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
         <div class="d-flex flex-column text-start footer-item">
-            <h4 class="text-light mb-3">팀원 소개</h4>
-            <a class="btn-link" href="">팀원 깃허브</a>
-            <div class="team-member">
-                <img src="/main-page/img/image_team.png" alt="Team Member" class="team-member-img">
-            </div>
+          <h4 class="text-light mb-3">ABOUT US</h4>
+          <a class="btn-link" href="">Eat IT 소개</a>
+          <a class="btn-link" href="">회사 소개</a>
+          <a class="btn-link" href="">인재 채용</a>
         </div>
-    </div>
-     <div class="col-lg-3 col-md-6">
-            <div class="d-flex flex-column text-start footer-item">
-              <h4 class="text-light mb-3">github</h4>
-              <a class="btn-link" href="">https://github.com/Practice-i5/EatIT-FE</a>
-              <a class="btn-link" href="">팀 노션</a>
-            </div>
-    </div>
-</div>
-            </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex flex-column text-start footer-item">
+          <h4 class="text-light mb-3">팀원 소개</h4>
+          <a class="btn-link" href="">팀원 깃허브</a>
+          <div class="team-member">
+            <img src="/main-page/img/image_team.png" alt="Team Member" class="team-member-img">
           </div>
         </div>
       </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <span class="text-light"
-              ><a href="#"
-                ><i class="fas fa-copyright text-light me-2"></i>Eat IT</a
-              >, All right reserved.</span
-            >
-          </div>
-          <div class="col-md-6 my-auto text-center text-md-end text-white">
-            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-            Designed By
-            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-            Distributed By
-            <a class="border-bottom" href="https://themewagon.com"
-              >ThemeWagon</a
-            >
-          </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex flex-column text-start footer-item">
+          <h4 class="text-light mb-3">github</h4>
+          <a class="btn-link" href="">https://github.com/Practice-i5/EatIT-FE</a>
+          <a class="btn-link" href="">팀 노션</a>
         </div>
       </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Eat IT</a>, All right
+            reserved.</span>
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Designed By
+          <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+          Distributed By
+          <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+      class="fa fa-arrow-up"></i></a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

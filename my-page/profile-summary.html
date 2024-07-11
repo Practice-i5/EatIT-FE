@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>프로필 수정</title>
+    <link rel="stylesheet" href="style-mypage.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="profile-modal.css">
+    <script src="js-mypage.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="header">
+            <div class="header-bar">
+                <img class="header-item logo" src="images/logo.png">
+                <a class="header-item">홈</a>
+                <a class="header-item">모임 등록</a>
+                <a class="header-item">모임 찾기</a>
+                <a class="header-item">후기</a>
+                <div class="header-item">
+                    <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                    <button class="btn-choice-mid btn-wb">마이페이지</button>
+                    <button class="btn-choice-mid btn-wb">로그아웃</button>
+                </div>
+            </div>
+        </nav>
+
+        <aside class="bar">
+            <div class="my-page-list sidebar-block">
+                <h2>마이 페이지</h2>
+                <ul class="list-no-pad">
+                    <li class="bar-list">
+                        <a class="active-page" href="./profile.html">프로필 수정</a>
+                    </li>
+                    <li class="bar-list">
+                        <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
+                    </li>
+                    <li class="bar-list">
+                        <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
+                    </li>
+                    <li class="bar-list">
+                        <a class="unactive-page" href="./black-list.html">차단 회원 관리</a>
+                    </li>
+                    <li class="bar-list">
+                        <a class="unactive-page" href="./account-info.html">계정 정보 보기</a>
+                    </li>
+                    <li class="bar-list">
+                        <a class="unactive-page" href="./withdraw.html">회원 탈퇴</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="profile">
+
+            <form class="form-content">
+                <h2>내 프로필</h2>
+                <p>다른 사람이 보는 프로필 모습</p>
+                <div class="profile-contents" style="max-width:400px; width:80%">
+
+
+                    <div class="form-item">
+                        <div class="form-input"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                            <img id="img-preview"
+                                src="https://i0.wp.com/adventure.co.kr/wp-content/uploads/2020/09/no-image.jpg"
+                                style="width:80px; height:80px; border:solid;" class="image-box" />
+
+                            <div class="profile-info">
+                                <h5 class="profile-name">닉네임</h5>
+                                <p>모임 횟수: 5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item-col">
+                        <h5>경력</h5>
+                        <p>네이버 백엔드 개발자</p>
+                        <p>넥슨 백엔드 개발자</p>
+                    </div>
+                    <div class="form-item-col">
+                        <h5>기술스택</h5>
+                        <p>백엔드</p>
+                    </div>
+                    <hr />
+                    <div class="form-item-col">
+                        <h5>평가</h5>
+                        <p>시간 약속을 잘 지켜요</p>
+                        <p>질문에 대한 답변이 빨라요</p>
+                        <p>응답이 빨라요</p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-link-block">
+                <a>고객서비스</a>
+                <a>소셜미디어</a>
+                <a>팀원소개</a>
+                <a>github</a>
+            </div>
+            <div style="width: 100%; align-items: center;">
+                <ul style="margin:auto; display: flex; flex-direction: row; width: 50%; max-width: 450px;">
+                    <li>김도현</li>
+                    <li>김재협</li>
+                    <li>김혜진</li>
+                    <li>정현민</li>
+                    <li>홍관섭</li>
+                </ul>
+            </div>
+            <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+        </footer>
+
+    </div>
+</body>
+
+</html>
