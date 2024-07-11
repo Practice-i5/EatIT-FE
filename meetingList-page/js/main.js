@@ -219,7 +219,7 @@ function toggleFavorite(event, iconId) {
         heartIcon.classList.remove('far');
         heartIcon.classList.add('fas'); // 채워진 하트 클래스
         heartIcon.classList.remove('text-primary');
-        heartIcon.classList.add('text-pink'); // 주황색 클래스
+        heartIcon.classList.add('text-pink'); // 핑크 클래스
     } else {
         heartIcon.classList.remove('fas');
         heartIcon.classList.add('far'); // 빈 하트 클래스
