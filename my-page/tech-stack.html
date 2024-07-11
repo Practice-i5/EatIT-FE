@@ -16,8 +16,12 @@
                 <form class="profile-contents">
                     <div>
                         <div>
+                            <h5>개발 내용</h5>
+                            <input type="text">
+                        </div>
+                        <div>
                             <h5>회사명</h5>
-                            <input type="text" required>
+                            <input type="text">
                         </div>
                         <div>
                             <h5>재직 기간</h5>
@@ -26,7 +30,7 @@
                         </div>
                         <div>
                             <h5>개발 업무</h5>
-                            <input type="text" required>
+                            <input type="text">
                         </div>
                     </div>
                     <div style="display:flex; justify-content:center">
@@ -82,10 +86,10 @@
 
             <div class="profile">
                 <form class="form-content">
-                    <h2>기술 프로필 설정</h2>
-                    <div class="form-item">
-                        <label class="profile-label">기술 스택</label>
-                        <ul class="list-no-pad form-size-limit chip-btn-list">
+                    <h2>기술 스택 선택</h2>
+                    <p class="form-message">최대 몇 개까지 선택가능합니다.</p>
+                    <div>
+                        <ul class="list-no-pad chip-btn-list" style="width: 100%;">
                             <li style="margin-top:5px; margin-bottom: 10px;">
                                     <input id="intereset-1" class="interest-check" type="checkbox" value="frontend">
                                     <label class="btn-choice-mid interest-label"for="intereset-1">프론트엔드</label>
@@ -148,38 +152,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <a href="./tech-stack.html" > 기술 스택 수정</a> -->
-                    <div class="form-item" id="nickname-form">
-                        <label>개발 경력</label>
-                        <div style="width: 70%;">
-                            <ul style="margin-left:5px; list-style: none; padding-left: 0px; display:flex; flex-flow : column wrap; align-items: baseline;">
-                                <li style="display: flex; justify-content: space-between; width: 100%;">
-                                    <div style="display: flex; flex-direction: column; align-items: baseline;">
-                                        <h3 style="margin:0px">현대오토에버</h3>
-                                        <p class="form-message-mini warn"> 백엔드 개발</p>
-                                        <p class="form-message-mini warn">2022.10~2023.11</p>
-                                    </div>
-                                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                                        <button class="btn-choice-small btn-wb">수정</button>
-                                        <button class="btn-choice-small btn-wb">삭제</button>
-                                    </div> 
-                                </li>
-                                <li style="display: flex; justify-content: space-between; width: 100%;">
-                                    <div style="display: flex; flex-direction: column; align-items: baseline;">
-                                        <h3 style="margin:0px">네이버</h3>
-                                        <p class="form-message-mini warn"> 백엔드 개발</p>
-                                        <p class="form-message-mini warn">2023.11~재직 중</p>
-                                    </div>
-                                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                                        <button class="btn-choice-small btn-wb">수정</button>
-                                        <button class="btn-choice-small btn-wb">삭제</button>
-                                    </div> 
-                                </li>
-                                <li style="float: right;"><button type="button" class="btn-choice-small btn-wb" id="add-experience">경력 사항 추가</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="btn-rw btn-submit" type="submit">제출</button>
+
+            
+                    <button class="btn-rw btn-submit" type="button" onclick="location.href='./tech-profile.html'">수정</button>
                 </form>
             </div>
             <footer class="footer">

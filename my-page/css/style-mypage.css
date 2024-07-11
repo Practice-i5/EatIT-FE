@@ -1,16 +1,11 @@
-/* .container {
-    display: grid;
-    grid-template-areas: 
-        ". header header header ."
-        ". bar main . ."
-        ". footer footer footer ."
-    ;
-    grid-template-columns: 1fr 2fr 3fr  2fr 1fr;
-} */
-
 body {
     margin: auto;
-    ;
+
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 img{
@@ -67,12 +62,6 @@ img{
 }
 
 
-/* 
-select{
-     input box와 크기를 맞춤 
-    box-sizing: content-box;
-} */
-
 #notification-icon {
     background-color: white;
 }
@@ -81,9 +70,6 @@ select{
     background-color: gainsboro;
 }
 
-/* #intro{
-    height: 100px;
-} */
 
 .header {
     grid-area: header;
@@ -108,6 +94,7 @@ select{
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -165,6 +152,7 @@ select{
 .profile img {
     width: 75px;
     height:75px;
+    border:1.5px solid;
 }
 
 .footer {
@@ -194,11 +182,6 @@ select{
     margin-bottom: 30px;
     border-bottom: solid #ECECEC 2px;
 }
-
-/* .bar-list a{
-    text-decoration: none;
-    color:black;
-} */
 
 .my-page-list {
     float: right;
@@ -239,7 +222,7 @@ select{
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: solid 2px;
+    border: solid 1.5px;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -254,8 +237,6 @@ select{
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 
 .profile-label {
@@ -278,11 +259,11 @@ select{
     margin-bottom: 5px;
 }
 
-.interest-label .interest-check {
+/* .interest-label .interest-check {
     color: white;
     background-color: red;
     border-color: red;
-}
+} */
 
 .interest-check+.interest-label {
     background-color: #ECECEC;
@@ -303,7 +284,13 @@ select{
 
 .form-message {
     font-size: 12px;
-    margin: 3px;
+    margin: 2px;
+    text-align: right;
+}
+
+.form-message-mini{
+    font-size: 12px;
+    margin:0px;
     text-align: right;
 }
 
@@ -326,17 +313,21 @@ select{
 
 .sidebar-block {
     float: right;
-    border: solid 2px;
+    border: solid 1.5px;
     border-radius: 10px;
     padding: 15px;
 }
 
 .chip-btn-list {
-    max-width: 70%;
+    /* max-width: 70%; */
     margin-left: 5px;
     display: flex;
     flex-flow: wrap;
     align-items: center;
+}
+
+.form-size-limit{
+    max-width: 70%;
 }
 
 .image-box {
@@ -357,4 +348,75 @@ select{
 .footer li{
     list-style: none;
     width: 20%;
+}
+
+.unactive{
+    display:none;
+}
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    align-items: center;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+.form-list-block{
+    list-style: none;
+    margin:3px;
+    padding:0px;
+}
+
+.list-no-pad{
+    list-style: none;
+    float:left;
+    padding-left: 0px;
+}
+
+
+.warn {
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.valid {
+    color: blue;
+    font-size: 12px;
 }

@@ -2,9 +2,8 @@
 <html>
     <head>
         <title>프로필 수정</title>
-        <link rel="stylesheet" href="style-mypage.css">
-        <link rel="stylesheet" href="components.css">
-        <script src="js-mypage.js"></script>
+        <link rel="stylesheet" href="css/style-mypage.css">
+        <link rel="stylesheet" href="css/button.css">
     </head>
     <body>
         <div class="container">
@@ -16,7 +15,7 @@
                     <a class="header-item">모임 찾기</a>
                     <a class="header-item">후기</a>
                     <div class="header-item">
-                        <button id="notification-icon"><img class="icon-image" src="notification.png"></button>
+                        <button id="notification-icon"><img class="icon-image" src="images/notification.png"></button>
                         <button class="btn-choice-mid btn-wb">마이페이지</button>
                         <button class="btn-choice-mid btn-wb">로그아웃</button>
                     </div>
@@ -34,7 +33,7 @@
                             <a class="unactive-page" href="./tech-profile.html">기술 프로필 설정</a>
                         </li>
                         <li class="bar-list">
-                            <a class="unactive-page" href="./meeting-list.html">참여한 모임 보기</a>
+                            <a class="unactive-page" href="./follow-list.html">팔로우 유저 목록</a>
                         </li>
                         <li class="bar-list">
                             <a class="unactive-page" href="./black-list.html">차단 회원 관리</a>
@@ -70,7 +69,7 @@
                         <label class="profile-label" for="get-nickname">닉네임</label>
                         <input id="get-nickname" type="text" placeholder="닉네임을 입력하세요.">
                     </div>
-                    <p class="form-message warn">주의사항이나 에러 메세지 나올거임</p>
+                    <p class="form-message warn">주의사항 같은 것 작성</p>
 
                     <div class="form-item">
                         <label class="profile-label">성별</label>
@@ -110,8 +109,9 @@
                         <li>홍관섭</li>
                     </ul>
                 </div>
-                <img src="image_161.png" style="width: 50%; min-width: 200px;max-width: 450px;">
+                <img src="images/git_image.png" style="width: 50%; min-width: 200px;max-width: 450px;">
             </footer>
         </div>
+        <script src="js/upload-image.js"></script>
     </body>
 </html>
