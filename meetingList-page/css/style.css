@@ -663,3 +663,12 @@ button#showAllButton:hover {
 .text-orange {
   color: #d63384; /* 핑크 */
 }
+
+
+/*모임 진행도 확인*/
+.meeting-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
