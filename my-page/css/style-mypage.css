@@ -259,11 +259,11 @@ img{
     margin-bottom: 5px;
 }
 
-.interest-label .interest-check {
+/* .interest-label .interest-check {
     color: white;
     background-color: red;
     border-color: red;
-}
+} */
 
 .interest-check+.interest-label {
     background-color: #ECECEC;
