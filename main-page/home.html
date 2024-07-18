@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>Eat IT</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
-      rel="stylesheet"
-    />
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <title>Eat IT</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+          rel="stylesheet"
+  />
+  
     <!-- Icon Font Stylesheet -->
     <link
       rel="stylesheet"
@@ -25,69 +27,39 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/css/home.min.css" th:href="@{/static/css/home.min.css}" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
- <style>
-        .main-image {
-            max-height: none; /* 메인 이미지에는 최대 높이를 제한하지 않음 */
-        }
-        .other-image {
-            max-height: 140px; /* 다른 이미지의 최대 높이를 140px로 제한 */
-        }
-        .carousel-inner img {
-            vertical-align: middle; /* 모든 이미지에 대해 중간 정렬 */
-        }
-          /* Font Awesome CSS */
-           <link rel="stylesheet" href="style.css">
+    <link href="../static/css/home.css" th:href="@{/static/css/home.css}" rel="stylesheet" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="home.css" th:href="@{/static/css/home.css}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qN7QCwYGdMQJvFTT9s1t23K3+XkXW6bYAt8+ft+K2Deyi1YlnbqRIMOF7WpXz3lk2UDIyNOX6g6b0OhR6W5f4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-          </style>
-
+          
   </head>
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
   
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script> <!-- Link to your main.js file -->
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+    <script src="../static/js/home.js" th:src="@{/static/js/home.js}"></script> <!-- Link to your home.js file -->
+
     <!-- Navbar start  수정한 부분-- 헤더 부분!-->
-<div class="container-fluid fixed-top">
-  <div class="container px-0">
-    <nav class="navbar navbar-light bg-white navbar-expand-xl">
-      <a href="home.html" class="navbar-brand">
-          <img src="/main-page/img/image_145.png" alt="Eat-IT Logo">
-        <h1 class="text-primary display-6">Eat-IT</h1>
-        
-      </a>
-      <button
-        class="navbar-toggler py-2 px-3"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="fa fa-bars text-primary"></span>
-      </button>
+    <div class="container-fluid fixed-top">
+      <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+          <a th:href="@{/home}" class="navbar-brand">
+            <img th:src="@{/main-page/img/logo.png}" alt="Eat-IT Logo">
+            <h1 class="text-primary display-6">Eat-IT</h1>
+          </a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            th:data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
       <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
         <div class="navbar-nav mx-auto">
           <a href="home.html" class="nav-item nav-link active">홈</a>
@@ -112,8 +84,7 @@
   </div>
 </div>
 <!-- Navbar End -->
- <!-- 일단 이렇게 해야 페이지 이동될 수 있어서 이 방식으로 했는데, 추후에 js로 분리시켜야 함-->
- <script src="js/main.js"></script>
+
 <script>
     // JavaScript for login and signup buttons
     document.addEventListener('DOMContentLoaded', function() {
@@ -126,45 +97,8 @@
     });
 </script>
  
-    <!-- Modal Search Start -->
-    <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span id="search-icon-1" class="input-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Search End -->
-    <!-- Hero Start -->
+
+    <!-- 검색 페이지 연결 부분 -->
     <div class="container-fluid py-5 mb-5 hero-header">
       <div class="container py-5">
         <div class="row g-5 align-items-center">
@@ -206,9 +140,7 @@
                     class="main-image img-fluid w-100 h-100 bg-secondary rounded"
                     alt="First slide"
                   />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >즐거운 식사</a
-                  > -->
+                 
                 </div>
                 <div class="carousel-item rounded">
                   <img
@@ -216,9 +148,7 @@
                     class="main-image img-fluid w-100 h-100 rounded"
                     alt="Second slide"
                   />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >정보 공유</a
-                  > -->
+               
                 </div>
               </div>
               <button
@@ -250,7 +180,8 @@
         </div>
       </div>
     </div>
-    <!-- Hero End -->
+    <!-- 메인 사진 -->
+
     <!-- 관심 개발 분야 목록-->
     <div class="container-fluid fruite py-5">
       <div class="container py-5">
@@ -846,6 +777,7 @@
                           <div
                             class="d-flex justify-content-between flex-lg-wrap"
                           >
+                          
                           <!-- 프로필 추가하는 부분-->
                           <div class="profile-container">
                           <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
@@ -1079,7 +1011,7 @@
                             <i id="heartIcon" class="far fa-heart me-2 text-primary"></i> 찜하기
                             </a>
                              <!-- Custom JavaScript -->
-                            <script src="main.js"></script>
+                            <script src="home.js"></script>
                           </div>
                         </div>
                       </div>
@@ -1097,8 +1029,8 @@
       </div>
     </div>
     <!-- JavaScript 파일 연결 -->
-    <script src="main.js"></script>
-    <!-- Fruits Shop End-->
+    <script src="home.js"></script>
+    <!--  Shop End-->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
       <div class="container py-5">
@@ -1198,6 +1130,6 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

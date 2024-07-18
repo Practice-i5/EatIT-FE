@@ -208,4 +208,3 @@ function toggleFavorite(event) {
     }
 }
 
-
